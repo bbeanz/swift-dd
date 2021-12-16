@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">    
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Represents a price criteria dimension</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>
+    <fields>
+        <fullName>APTS_Ext_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>APTS Ext ID</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>AttributeId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>ID of the product attribute which provides the value for the dimension.</description>
+        <externalId>false</externalId>
+        <label>Attribute</label>
+        <referenceTo>ProductAttribute__c</referenceTo>
+        <relationshipLabel>Price Dimensions</relationshipLabel>
+        <relationshipName>PriceDimensions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The business object which provides the context for the dimension</description>
+        <externalId>false</externalId>
+        <label>Business Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>LineItem__c</fullName>
+                    <default>true</default>
+                    <label>LineItem__c</label>
+                </value>
+                <value>
+                    <fullName>OrderLineItem__c</fullName>
+                    <default>false</default>
+                    <label>OrderLineItem__c</label>
+                </value>
+                <value>
+                    <fullName>ExternalOrderSummaryItem__c</fullName>
+                    <default>false</default>
+                    <label>ExternalOrderSummaryItem__c</label>
+                </value>
+                <value>
+                    <fullName>ProductAttributeValue__c</fullName>
+                    <default>false</default>
+                    <label>ProductAttributeValue__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ChildFilterName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the child filter associated with the price dimension</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the child filter associated with the price dimension</inlineHelpText>
+        <label>Child Filter Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContextType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of context associated with the dimension</description>
+        <externalId>false</externalId>
+        <label>Context Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Line Item</fullName>
+                    <default>false</default>
+                    <label>Line Item</label>
+                </value>
+                <value>
+                    <fullName>Order Line Item</fullName>
+                    <default>false</default>
+                    <label>Order Line Item</label>
+                </value>
+                <value>
+                    <fullName>Product Attribute</fullName>
+                    <default>false</default>
+                    <label>Product Attribute</label>
+                </value>
+                <value>
+                    <fullName>Formula Field</fullName>
+                    <default>false</default>
+                    <label>Formula Field</label>
+                </value>
+                <value>
+                    <fullName>Order Formula Field</fullName>
+                    <default>false</default>
+                    <label>Order Formula Field</label>
+                </value>
+                <value>
+                    <fullName>Child Filter</fullName>
+                    <default>false</default>
+                    <label>Child Filter</label>
+                </value>
+                <value>
+                    <fullName>Order Child Filter</fullName>
+                    <default>false</default>
+                    <label>Order Child Filter</label>
+                </value>
+                <value>
+                    <fullName>External Order Summary Item</fullName>
+                    <default>false</default>
+                    <label>External Order Summary Item</label>
+                </value>
+                <value>
+                    <fullName>External Order Formula Field</fullName>
+                    <default>false</default>
+                    <label>External Order Formula Field</label>
+                </value>
+                <value>
+                    <fullName>External Order Child Filter</fullName>
+                    <default>false</default>
+                    <label>External Order Child Filter</label>
+                </value>
+                <value>
+                    <fullName>Asset Line Item</fullName>
+                    <default>false</default>
+                    <label>Asset Line Item</label>
+                </value>
+                <value>
+                    <fullName>Asset Attribute</fullName>
+                    <default>false</default>
+                    <label>Asset Attribute</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CumulativeDimensionId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>ID of the cumulative dimension associated with the dimension. Only applicable to numeric dimensions</description>
+        <externalId>false</externalId>
+        <label>Cumulative Dimension</label>
+        <referenceTo>PriceDimension__c</referenceTo>
+        <relationshipLabel>Related Dimensions</relationshipLabel>
+        <relationshipName>RelatedDimensions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Datasource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The data source which provides the value for the dimension.</description>
+        <externalId>false</externalId>
+        <label>Field</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The description for the dimension</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>    
+    <fields>
+        <fullName>RelationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The relation type</description>
+        <externalId>false</externalId>
+        <label>Relation Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Related Quantity</fullName>
+                    <default>false</default>
+                    <label>Related Quantity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The dimension type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The dimension type</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>true</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Quantity</fullName>
+                    <default>false</default>
+                    <label>Quantity</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+                <value>
+                    <fullName>Amount</fullName>
+                    <default>false</default>
+                    <label>Amount</label>
+                </value>
+                <value>
+                    <fullName>Equipment</fullName>
+                    <default>false</default>
+                    <label>Equipment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>RFP Price Dimension</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>ContextType__c</columns>
+        <columns>BusinessObject__c</columns>
+        <columns>Datasource__c</columns>
+        <columns>Description__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Type__c</columns>
+        <columns>AttributeId__c</columns>
+        <columns>RelationType__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>NAME</columns>
+        <columns>APTS_Ext_ID__c</columns>
+        <columns>BusinessObject__c</columns>
+        <columns>Datasource__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Dimension Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Price Dimensions</pluralLabel>    
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,144 +1,1506 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <actionOverrides>
-        <actionName>Add</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Add</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Add</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">    
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>ReadWrite</externalSharingModel>    
+    <fields>
+        <fullName>APTS_Active__c</fullName>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Self Service</fullName>
+                    <default>false</default>
+                    <label>Self Service</label>
+                </value>
+                <value>
+                    <fullName>Account Manager</fullName>
+                    <default>false</default>
+                    <label>Account Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>APTS_Commercial_Change__c</fullName>
+        <externalId>false</externalId>
+        <label>Commercial Change</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>APTS_Enable_for_E_Commerce__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enable for E-Commerce</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>APTS_Exceptional_Pricing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Exceptional Pricing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>APTS_Ext_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>APTS Ext ID</label>
+        <length>60</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>APTS_Inactive__c</fullName>
+        <externalId>false</externalId>
+        <label>Inactive</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Visible</fullName>
+                    <default>false</default>
+                    <label>Not Visible</label>
+                </value>
+                <value>
+                    <fullName>Account Manager</fullName>
+                    <default>false</default>
+                    <label>Account Manager</label>
+                </value>
+                <value>
+                    <fullName>E-Forms</fullName>
+                    <default>false</default>
+                    <label>E-Forms</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>APTS_Main_Apttus_Configuration_Bundle__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To identify Main Config. Bundle in environment</description>
+        <externalId>false</externalId>
+        <label>APTS_Main Apttus Configuration Bundle</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>APTS_PS_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Price Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>APTS_Search_Tags__c</fullName>
+        <externalId>false</externalId>
+        <label>Search Tags</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>APTS_Show_on_Template__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This field willbe used to identify which Products need to be shown on Quote Document.</description>
+        <externalId>false</externalId>
+        <label>Show on Template</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>APTS_Technical_Change__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Change</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>APTS_Terminate__c</fullName>
+        <externalId>false</externalId>
+        <label>Terminate</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>APTS_Type__c</fullName>
+        <description>This field will be used to Identify Commercial Packages and Commercial Bundles</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial Bundle</fullName>
+                    <default>false</default>
+                    <label>Commercial Bundle</label>
+                </value>
+                <value>
+                    <fullName>Commercial Package</fullName>
+                    <default>false</default>
+                    <label>Commercial Package</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ARIS_GUID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>ARIS GUID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Applicable_to_True_Sales_Commission__c</fullName>
+        <description>CR #40119085</description>
+        <externalId>false</externalId>
+        <label>Sales Commission Group</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>3SKEY</fullName>
+                    <default>false</default>
+                    <label>3SKEY</label>
+                </value>
+                <value>
+                    <fullName>AMH</fullName>
+                    <default>false</default>
+                    <label>AMH</label>
+                </value>
+                <value>
+                    <fullName>BI</fullName>
+                    <default>false</default>
+                    <label>BI</label>
+                </value>
+                <value>
+                    <fullName>Cloud family</fullName>
+                    <default>false</default>
+                    <label>Cloud family</label>
+                </value>
+                <value>
+                    <fullName>Compliance Analytics</fullName>
+                    <default>false</default>
+                    <label>Compliance Analytics</label>
+                </value>
+                <value>
+                    <fullName>Consultancy</fullName>
+                    <default>false</default>
+                    <label>Consultancy</label>
+                </value>
+                <value>
+                    <fullName>FIN Copy</fullName>
+                    <default>false</default>
+                    <label>FIN Copy</label>
+                </value>
+                <value>
+                    <fullName>Interfaces</fullName>
+                    <default>false</default>
+                    <label>Interfaces</label>
+                </value>
+                <value>
+                    <fullName>KYC</fullName>
+                    <default>false</default>
+                    <label>KYC</label>
+                </value>
+                <value>
+                    <fullName>My Standards</fullName>
+                    <default>false</default>
+                    <label>My Standards</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Screening</fullName>
+                    <default>false</default>
+                    <label>Sanctions Screening</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Testing</fullName>
+                    <default>false</default>
+                    <label>Sanctions Testing</label>
+                </value>
+                <value>
+                    <fullName>Support services</fullName>
+                    <default>false</default>
+                    <label>Support services</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef</label>
+                </value>
+                <value>
+                    <fullName>TSU</fullName>
+                    <default>false</default>
+                    <label>TSU</label>
+                </value>
+                <value>
+                    <fullName>Not applicable</fullName>
+                    <default>false</default>
+                    <label>Not applicable</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BundleInvoiceLevel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The invoice level associated with the bundle</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The invoice level associated with the bundle</inlineHelpText>
+        <label>Bundle Invoice Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bundle</fullName>
+                    <default>false</default>
+                    <label>Bundle</label>
+                </value>
+                <value>
+                    <fullName>Detail</fullName>
+                    <default>false</default>
+                    <label>Detail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ConfigurationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product configuration type</description>
+        <externalId>false</externalId>
+        <label>Configuration Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standalone</fullName>
+                    <default>true</default>
+                    <label>Standalone</label>
+                </value>
+                <value>
+                    <fullName>Bundle</fullName>
+                    <default>false</default>
+                    <label>Bundle</label>
+                </value>
+                <value>
+                    <fullName>Option</fullName>
+                    <default>false</default>
+                    <label>Option</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customizable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product must be configured during selection.</description>
+        <externalId>false</externalId>
+        <label>Must Configure</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DiscontinuedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date when the product is pulled out and rendered unavailable for sale on the store</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date when the product is pulled out and rendered unavailable for sale on the store</inlineHelpText>
+        <label>Discontinued Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EffectiveDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product effective date. The product becomes available for selection on this date and time.</description>
+        <externalId>false</externalId>
+        <label>Effective Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>EffectiveStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The start date of the product in a store</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The start date of the product in a store</inlineHelpText>
+        <label>Effective Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ExcludeFromSitemap__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product is listed for indexing by search engines.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether the product is listed for indexing by search engines.</inlineHelpText>
+        <label>Exclude From Sitemap</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product expiration date. The product is unavailable for selection after this date and time.</description>
+        <externalId>false</externalId>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>HasAttributes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product has attributes.</description>
+        <externalId>false</externalId>
+        <label>Has Attributes</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasDefaults__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product has default rules</description>
+        <externalId>false</externalId>
+        <label>Has Defaults</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasOptions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the product has options.</description>
+        <externalId>false</externalId>
+        <label>Has Options</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasSearchAttributes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When set to true the product can be considered as base product for searching related products</description>
+        <externalId>false</externalId>
+        <label>Has Search Attributes</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IconId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The attachment object ID of the uploaded icon image file.</description>
+        <externalId>false</externalId>
+        <label>Icon Image</label>
+        <length>32</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IconSize__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The actual size of the icon.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The actual size of the icon.</inlineHelpText>
+        <label>Actual Icon Size</label>
+        <length>32</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Icon__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Displays the icon uploaded using the icon button.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &quot;/apex/IconUploader?productId=&quot;+Id, IF(ISBLANK(IconId__c) , IMAGE(&quot;/resource/Image_UploadIcon&quot;, &quot;Upload Icon&quot;, 50, 50), IMAGE(&quot;/servlet/servlet.FileDownload?file=&quot;+IconId__c , &quot;Icon&quot;, 50, 50)) , &quot;_top&quot; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Product Icon for display in application. Click on the icon to add/change the image.</inlineHelpText>
+        <label>Icon</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LaunchDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date when the product is launched for selling.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date when the product is launched for selling.</inlineHelpText>
+        <label>Launch Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ProductType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The product type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The product type</inlineHelpText>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Equipment</fullName>
+                    <default>false</default>
+                    <label>Equipment</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+                <value>
+                    <fullName>Entitlement</fullName>
+                    <default>false</default>
+                    <label>Entitlement</label>
+                </value>
+                <value>
+                    <fullName>License</fullName>
+                    <default>false</default>
+                    <label>License</label>
+                </value>
+                <value>
+                    <fullName>Maintenance</fullName>
+                    <default>false</default>
+                    <label>Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Wallet</fullName>
+                    <default>false</default>
+                    <label>Wallet</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+                <value>
+                    <fullName>Professional Service</fullName>
+                    <default>false</default>
+                    <label>Professional Service</label>
+                </value>
+                <value>
+                    <fullName>Support Service</fullName>
+                    <default>false</default>
+                    <label>Support Service</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RenewalLeadTime__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The renewal lead time in days for the installed product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The renewal lead time in days for the installed product</inlineHelpText>
+        <label>Renewal Lead Time</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShowTabView__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show the option groups in a tab view. Top level option groups are displayed as tabs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check to show tab view. Top level option groups are displayed as tabs.</inlineHelpText>
+        <label>Show Tab View</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Uom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The default unit of measure for the product</description>
+        <externalId>false</externalId>
+        <label>Uom</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Each</fullName>
+                    <default>true</default>
+                    <label>Each</label>
+                </value>
+                <value>
+                    <fullName>Hour</fullName>
+                    <default>false</default>
+                    <label>Hour</label>
+                </value>
+                <value>
+                    <fullName>Day</fullName>
+                    <default>false</default>
+                    <label>Day</label>
+                </value>
+                <value>
+                    <fullName>Month</fullName>
+                    <default>false</default>
+                    <label>Month</label>
+                </value>
+                <value>
+                    <fullName>Year</fullName>
+                    <default>false</default>
+                    <label>Year</label>
+                </value>
+                <value>
+                    <fullName>Quarter</fullName>
+                    <default>false</default>
+                    <label>Quarter</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Gallon</fullName>
+                    <default>false</default>
+                    <label>Gallon</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Version__c</fullName>
+        <defaultValue>1.00</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Version</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CHEOPS_L2__c</fullName>
+        <externalId>false</externalId>
+        <label>CHEOPS L2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advanced Support and Care Services</fullName>
+                    <default>false</default>
+                    <label>Advanced Support and Care Services</label>
+                </value>
+                <value>
+                    <fullName>Professional Services</fullName>
+                    <default>false</default>
+                    <label>Professional Services</label>
+                </value>
+                <value>
+                    <fullName>Applications and MIs</fullName>
+                    <default>false</default>
+                    <label>Applications and MIs</label>
+                </value>
+                <value>
+                    <fullName>Channels and options</fullName>
+                    <default>false</default>
+                    <label>Channels and options</label>
+                </value>
+                <value>
+                    <fullName>Connectivity</fullName>
+                    <default>false</default>
+                    <label>Connectivity</label>
+                </value>
+                <value>
+                    <fullName>Data Analytics and Information Products</fullName>
+                    <default>false</default>
+                    <label>Data Analytics and Information Products</label>
+                </value>
+                <value>
+                    <fullName>Financial Crime and Compliance Products</fullName>
+                    <default>false</default>
+                    <label>Financial Crime and Compliance Products</label>
+                </value>
+                <value>
+                    <fullName>Interfaces and Software</fullName>
+                    <default>false</default>
+                    <label>Interfaces and Software</label>
+                </value>
+                <value>
+                    <fullName>Membership</fullName>
+                    <default>false</default>
+                    <label>Membership</label>
+                </value>
+                <value>
+                    <fullName>Shared Services - Other</fullName>
+                    <default>false</default>
+                    <label>Shared Services - Other</label>
+                </value>
+                <value>
+                    <fullName>t</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>t</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CHEOPS_L5__c</fullName>
+        <externalId>false</externalId>
+        <label>CHEOPS L5</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>3SKEY</fullName>
+                    <default>false</default>
+                    <label>3SKEY</label>
+                </value>
+                <value>
+                    <fullName>Advanced Support</fullName>
+                    <default>false</default>
+                    <label>Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>Advisory Services-Other</fullName>
+                    <default>false</default>
+                    <label>Advisory Services</label>
+                </value>
+                <value>
+                    <fullName>Alliance Access</fullName>
+                    <default>false</default>
+                    <label>Alliance Access</label>
+                </value>
+                <value>
+                    <fullName>Alliance Cloud</fullName>
+                    <default>false</default>
+                    <label>Alliance Cloud</label>
+                </value>
+                <value>
+                    <fullName>Alliance Connect</fullName>
+                    <default>false</default>
+                    <label>Alliance Connect</label>
+                </value>
+                <value>
+                    <fullName>Alliance Connect and Other Connections</fullName>
+                    <default>false</default>
+                    <label>Alliance Connect and Other Connections</label>
+                </value>
+                <value>
+                    <fullName>Alliance Entry</fullName>
+                    <default>false</default>
+                    <label>Alliance Entry</label>
+                </value>
+                <value>
+                    <fullName>Alliance Gateway</fullName>
+                    <default>false</default>
+                    <label>Alliance Gateway</label>
+                </value>
+                <value>
+                    <fullName>Alliance Gateway Instant</fullName>
+                    <default>false</default>
+                    <label>Alliance Gateway Instant</label>
+                </value>
+                <value>
+                    <fullName>Alliance Lifeline</fullName>
+                    <default>false</default>
+                    <label>Alliance Lifeline</label>
+                </value>
+                <value>
+                    <fullName>Alliance Lite2</fullName>
+                    <default>false</default>
+                    <label>Alliance Lite2</label>
+                </value>
+                <value>
+                    <fullName>Alliance Managed Operations Delivery</fullName>
+                    <default>false</default>
+                    <label>Alliance Managed Operations Delivery</label>
+                </value>
+                <value>
+                    <fullName>Alliance Messaging Hub</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Alliance Messaging Hub</label>
+                </value>
+                <value>
+                    <fullName>Alliance Remote Gateway</fullName>
+                    <default>false</default>
+                    <label>Alliance Remote Gateway</label>
+                </value>
+                <value>
+                    <fullName>Alliance RMA</fullName>
+                    <default>false</default>
+                    <label>Alliance RMA</label>
+                </value>
+                <value>
+                    <fullName>Alliance Warehouse</fullName>
+                    <default>false</default>
+                    <label>Alliance Warehouse</label>
+                </value>
+                <value>
+                    <fullName>AMH</fullName>
+                    <default>false</default>
+                    <label>AMH</label>
+                </value>
+                <value>
+                    <fullName>AU-NPP Support</fullName>
+                    <default>false</default>
+                    <label>AU-NPP Support</label>
+                </value>
+                <value>
+                    <fullName>Bankers World Online</fullName>
+                    <default>false</default>
+                    <label>Bankers World Online</label>
+                </value>
+                <value>
+                    <fullName>Banking Analytics</fullName>
+                    <default>false</default>
+                    <label>Banking Analytics</label>
+                </value>
+                <value>
+                    <fullName>BIC Directories Online</fullName>
+                    <default>false</default>
+                    <label>BIC Directories Online</label>
+                </value>
+                <value>
+                    <fullName>BIC Registration</fullName>
+                    <default>false</default>
+                    <label>BIC Registration</label>
+                </value>
+                <value>
+                    <fullName>Business Learning Services</fullName>
+                    <default>false</default>
+                    <label>Business Learning Services</label>
+                </value>
+                <value>
+                    <fullName>Care Services</fullName>
+                    <default>false</default>
+                    <label>Care Services</label>
+                </value>
+                <value>
+                    <fullName>Certification</fullName>
+                    <default>false</default>
+                    <label>Certification</label>
+                </value>
+                <value>
+                    <fullName>Channels and options</fullName>
+                    <default>false</default>
+                    <label>Channels and options</label>
+                </value>
+                <value>
+                    <fullName>CLS MI Channel</fullName>
+                    <default>false</default>
+                    <label>CLS MI Channel</label>
+                </value>
+                <value>
+                    <fullName>Compliance Analytics</fullName>
+                    <default>false</default>
+                    <label>Compliance Analytics</label>
+                </value>
+                <value>
+                    <fullName>Concurrent Sessions</fullName>
+                    <default>false</default>
+                    <label>Concurrent Sessions</label>
+                </value>
+                <value>
+                    <fullName>Concurrent Users</fullName>
+                    <default>false</default>
+                    <label>Concurrent Users</label>
+                </value>
+                <value>
+                    <fullName>Corporate</fullName>
+                    <default>false</default>
+                    <label>Corporate</label>
+                </value>
+                <value>
+                    <fullName>Corporate Registration</fullName>
+                    <default>false</default>
+                    <label>Corporate Registration</label>
+                </value>
+                <value>
+                    <fullName>Correspondent Monitoring</fullName>
+                    <default>false</default>
+                    <label>Correspondent Monitoring</label>
+                </value>
+                <value>
+                    <fullName>CREST</fullName>
+                    <default>false</default>
+                    <label>CREST</label>
+                </value>
+                <value>
+                    <fullName>Custom code</fullName>
+                    <default>false</default>
+                    <label>Custom code</label>
+                </value>
+                <value>
+                    <fullName>Customer Registration</fullName>
+                    <default>false</default>
+                    <label>Customer Registration</label>
+                </value>
+                <value>
+                    <fullName>Daily Validation Reports</fullName>
+                    <default>false</default>
+                    <label>Daily Validation Reports</label>
+                </value>
+                <value>
+                    <fullName>Direct Link</fullName>
+                    <default>false</default>
+                    <label>Direct Link</label>
+                </value>
+                <value>
+                    <fullName>Direct Link for Alliance Lifeline</fullName>
+                    <default>false</default>
+                    <label>Direct Link for Alliance Lifeline</label>
+                </value>
+                <value>
+                    <fullName>Direct Link for Lite2</fullName>
+                    <default>false</default>
+                    <label>Direct Link for Lite2</label>
+                </value>
+                <value>
+                    <fullName>EBA E1/S1</fullName>
+                    <default>false</default>
+                    <label>EBA E1/S1</label>
+                </value>
+                <value>
+                    <fullName>ESMIG</fullName>
+                    <default>false</default>
+                    <label>ESMIG</label>
+                </value>
+                <value>
+                    <fullName>Files</fullName>
+                    <default>false</default>
+                    <label>Files</label>
+                </value>
+                <value>
+                    <fullName>FIN Copy</fullName>
+                    <default>false</default>
+                    <label>FIN Copy</label>
+                </value>
+                <value>
+                    <fullName>gpi</fullName>
+                    <default>false</default>
+                    <label>gpi</label>
+                </value>
+                <value>
+                    <fullName>gpi API</fullName>
+                    <default>false</default>
+                    <label>gpi API</label>
+                </value>
+                <value>
+                    <fullName>gpi Connector</fullName>
+                    <default>false</default>
+                    <label>gpi Connector</label>
+                </value>
+                <value>
+                    <fullName>gpi Directory</fullName>
+                    <default>false</default>
+                    <label>gpi Directory</label>
+                </value>
+                <value>
+                    <fullName>gpi for Corporates</fullName>
+                    <default>false</default>
+                    <label>gpi for Corporates</label>
+                </value>
+                <value>
+                    <fullName>gpi friction reduction</fullName>
+                    <default>false</default>
+                    <label>gpi friction reduction</label>
+                </value>
+                <value>
+                    <fullName>gpi Observer</fullName>
+                    <default>false</default>
+                    <label>gpi Observer</label>
+                </value>
+                <value>
+                    <fullName>HSM</fullName>
+                    <default>false</default>
+                    <label>HSM</label>
+                </value>
+                <value>
+                    <fullName>Integration software</fullName>
+                    <default>false</default>
+                    <label>Integration software</label>
+                </value>
+                <value>
+                    <fullName>Interfaces</fullName>
+                    <default>false</default>
+                    <label>Interfaces</label>
+                </value>
+                <value>
+                    <fullName>Interfaces (SAA/E)</fullName>
+                    <default>false</default>
+                    <label>Interfaces (SAA/E)</label>
+                </value>
+                <value>
+                    <fullName>IPLA</fullName>
+                    <default>false</default>
+                    <label>IPLA</label>
+                </value>
+                <value>
+                    <fullName>JV Interco</fullName>
+                    <default>false</default>
+                    <label>JV Interco</label>
+                </value>
+                <value>
+                    <fullName>KYC</fullName>
+                    <default>false</default>
+                    <label>KYC</label>
+                </value>
+                <value>
+                    <fullName>KYC Adverse Media</fullName>
+                    <default>false</default>
+                    <label>KYC Adverse Media</label>
+                </value>
+                <value>
+                    <fullName>KYC ProFile</fullName>
+                    <default>false</default>
+                    <label>KYC ProFile</label>
+                </value>
+                <value>
+                    <fullName>KYC Registry</fullName>
+                    <default>false</default>
+                    <label>KYC Registry</label>
+                </value>
+                <value>
+                    <fullName>L2BA programme</fullName>
+                    <default>false</default>
+                    <label>L2BA programme</label>
+                </value>
+                <value>
+                    <fullName>Learning Services</fullName>
+                    <default>false</default>
+                    <label>Learning Services</label>
+                </value>
+                <value>
+                    <fullName>Logical Terminal</fullName>
+                    <default>false</default>
+                    <label>Logical Terminal</label>
+                </value>
+                <value>
+                    <fullName>MA-CUG</fullName>
+                    <default>false</default>
+                    <label>MA-CUG</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Services</fullName>
+                    <default>false</default>
+                    <label>Maintenance Services</label>
+                </value>
+                <value>
+                    <fullName>MIRS</fullName>
+                    <default>false</default>
+                    <label>MIRS</label>
+                </value>
+                <value>
+                    <fullName>MyStandards</fullName>
+                    <default>false</default>
+                    <label>MyStandards</label>
+                </value>
+                <value>
+                    <fullName>Name Screening</fullName>
+                    <default>false</default>
+                    <label>Name Screening</label>
+                </value>
+                <value>
+                    <fullName>NBI Standards</fullName>
+                    <default>false</default>
+                    <label>NBI Standards</label>
+                </value>
+                <value>
+                    <fullName>Non product specific</fullName>
+                    <default>false</default>
+                    <label>Non product specific</label>
+                </value>
+                <value>
+                    <fullName>Not assigned</fullName>
+                    <default>false</default>
+                    <label>Not assigned</label>
+                </value>
+                <value>
+                    <fullName>OS Swap</fullName>
+                    <default>false</default>
+                    <label>OS Swap</label>
+                </value>
+                <value>
+                    <fullName>Other Advisory Services</fullName>
+                    <default>false</default>
+                    <label>Other Advisory Services</label>
+                </value>
+                <value>
+                    <fullName>Paper</fullName>
+                    <default>false</default>
+                    <label>Paper</label>
+                </value>
+                <value>
+                    <fullName>Partner Labelling</fullName>
+                    <default>false</default>
+                    <label>Partner Labelling</label>
+                </value>
+                <value>
+                    <fullName>Partner Marketing</fullName>
+                    <default>false</default>
+                    <label>Partner Marketing</label>
+                </value>
+                <value>
+                    <fullName>Payment Controls</fullName>
+                    <default>false</default>
+                    <label>Payment Controls</label>
+                </value>
+                <value>
+                    <fullName>Payments Data Quality</fullName>
+                    <default>false</default>
+                    <label>Payments Data Quality</label>
+                </value>
+                <value>
+                    <fullName>Personal Certificates &amp; Tokens</fullName>
+                    <default>false</default>
+                    <label>Personal Certificates &amp; Tokens</label>
+                </value>
+                <value>
+                    <fullName>PKI &amp; Security Officers</fullName>
+                    <default>false</default>
+                    <label>PKI &amp; Security Officers</label>
+                </value>
+                <value>
+                    <fullName>Premium Plus</fullName>
+                    <default>false</default>
+                    <label>Premium Plus</label>
+                </value>
+                <value>
+                    <fullName>Premium Support</fullName>
+                    <default>false</default>
+                    <label>Premium Support</label>
+                </value>
+                <value>
+                    <fullName>Professional Services</fullName>
+                    <default>false</default>
+                    <label>Professional Services</label>
+                </value>
+                <value>
+                    <fullName>Redistribution licences</fullName>
+                    <default>false</default>
+                    <label>Redistribution licences</label>
+                </value>
+                <value>
+                    <fullName>RMA</fullName>
+                    <default>false</default>
+                    <label>RMA</label>
+                </value>
+                <value>
+                    <fullName>RMA Analysis</fullName>
+                    <default>false</default>
+                    <label>RMA Analysis</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Connector</fullName>
+                    <default>false</default>
+                    <label>Sanctions Connector</label>
+                </value>                
+                <value>
+                    <fullName>Sanctions Screening</fullName>
+                    <default>false</default>
+                    <label>Sanctions Screening</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Testing</fullName>
+                    <default>false</default>
+                    <label>Sanctions Testing</label>
+                </value>
+                <value>
+                    <fullName>Securities Analytics</fullName>
+                    <default>false</default>
+                    <label>Securities Analytics</label>
+                </value>
+                <value>
+                    <fullName>Security - Other</fullName>
+                    <default>false</default>
+                    <label>Security - Other</label>
+                </value>
+                <value>
+                    <fullName>Shared Infrastructure Programme</fullName>
+                    <default>false</default>
+                    <label>Shared Infrastructure Programme</label>
+                </value>
+                <value>
+                    <fullName>SIL</fullName>
+                    <default>false</default>
+                    <label>SIL</label>
+                </value>
+                <value>
+                    <fullName>SNL</fullName>
+                    <default>false</default>
+                    <label>SNL</label>
+                </value>
+                <value>
+                    <fullName>Solutions for Corporates</fullName>
+                    <default>false</default>
+                    <label>Solutions for Corporates</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef APIs</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef APIs</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef Corporate Pack</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef Corporate Pack</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef Data Manager</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef Data Manager</label>
+                </value>
+                <value>
+                    <fullName>SWIFTScope</fullName>
+                    <default>false</default>
+                    <label>SWIFTScope</label>
+                </value>
+                <value>
+                    <fullName>SWIFTSmart</fullName>
+                    <default>false</default>
+                    <label>SWIFTSmart</label>
+                </value>
+                <value>
+                    <fullName>SWIFT Translator</fullName>
+                    <default>false</default>
+                    <label>SWIFT Translator</label>
+                </value>
+                <value>
+                    <fullName>T2S Connector</fullName>
+                    <default>false</default>
+                    <label>T2S Connector</label>
+                </value>
+                <value>
+                    <fullName>T2S Support</fullName>
+                    <default>false</default>
+                    <label>T2S Support</label>
+                </value>
+                <value>
+                    <fullName>Technical Learning Services</fullName>
+                    <default>false</default>
+                    <label>Technical Learning Services</label>
+                </value>
+                <value>
+                    <fullName>Transaction Screening</fullName>
+                    <default>false</default>
+                    <label>Transaction Screening</label>
+                </value>
+                <value>
+                    <fullName>Translator</fullName>
+                    <default>false</default>
+                    <label>Translator</label>
+                </value>
+                <value>
+                    <fullName>Travel and Expenses</fullName>
+                    <default>false</default>
+                    <label>Travel and Expenses</label>
+                </value>
+                <value>
+                    <fullName>User Handbooks</fullName>
+                    <default>false</default>
+                    <label>User Handbooks</label>
+                </value>
+                <value>
+                    <fullName>VPN Box</fullName>
+                    <default>false</default>
+                    <label>VPN Box</label>
+                </value>
+                <value>
+                    <fullName>Watch Analytics and Watch Insights</fullName>
+                    <default>false</default>
+                    <label>Watch Analytics and Watch Insights</label>
+                </value>
+                <value>
+                    <fullName>Work Detail</fullName>
+                    <default>false</default>
+                    <label>Work Detail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Com_Plan_Category__c</fullName>
+        <description>GDF 24/11 Added for Com Plan</description>
+        <externalId>false</externalId>
+        <label>Com Plan Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Target</fullName>
+                    <default>false</default>
+                    <label>No Target</label>
+                </value>
+                <value>
+                    <fullName>Consultancy</fullName>
+                    <default>false</default>
+                    <label>Consultancy</label>
+                </value>
+                <value>
+                    <fullName>Supplementary Product</fullName>
+                    <default>false</default>
+                    <label>Supplementary Product</label>
+                </value>
+                <value>
+                    <fullName>Interfaces</fullName>
+                    <default>false</default>
+                    <label>Interfaces</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Commercial_Product_link__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Self Relationship</description>
+        <externalId>false</externalId>
+        <label>Commercial Product Link</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Products</relationshipLabel>
+        <relationshipName>Products</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Conversion_Rate_AUD_to_EUR__c</fullName>
+        <defaultValue>0.667</defaultValue>
+        <externalId>false</externalId>
+        <label>Conversion Rate AUD to EUR</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Conversion_Rate_CNY_to_EUR__c</fullName>
+        <defaultValue>0.12048192</defaultValue>
+        <externalId>false</externalId>
+        <label>Conversion Rate CNY to EUR</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Conversion_Rate_USD_to_EUR__c</fullName>
+        <defaultValue>0.826</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>For CRM Admin: updating the conversion rate default value only impacts future price entries. E.g. Current Opportunity Pipeline Reporting or won opportunity amounts are not impacted by changing the value.</inlineHelpText>
+        <label>Conversion Rate USD to EUR</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Default_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Commercial Product Default Currency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EUR</fullName>
+                    <default>true</default>
+                    <label>EUR</label>
+                </value>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                    <label>USD</label>
+                </value>
+                <value>
+                    <fullName>AUD</fullName>
+                    <default>false</default>
+                    <label>AUD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>DisplayUrl</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -148,55 +1510,3027 @@
     </fields>
     <fields>
         <fullName>ExternalId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Family</fullName>
+        <inlineHelpText>L2 Product Family</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ID2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Id</formula>
+        <label>ID2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_Scope_Of_Business_Partner_Commission__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CR#40129181</description>
+        <externalId>false</externalId>
+        <label>In Scope Of Business Partner Commission</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>In_scope_of_Sales_alert_report__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>In scope of Sales alert report</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoicing_Scheme__c</fullName>
+        <description>CR#40129181</description>
+        <externalId>false</externalId>
+        <label>Invoicing Scheme</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>One-Time Fee</fullName>
+                    <default>true</default>
+                    <label>One-Time Fee</label>
+                </value>
+                <value>
+                    <fullName>Usage</fullName>
+                    <default>false</default>
+                    <label>Usage</label>
+                </value>
+                <value>
+                    <fullName>Monthly Fee</fullName>
+                    <default>false</default>
+                    <label>Monthly Fee</label>
+                </value>
+                <value>
+                    <fullName>Yearly Fee Prorated First Year</fullName>
+                    <default>false</default>
+                    <label>Yearly Fee Prorated First Year</label>
+                </value>
+                <value>
+                    <fullName>Yearly Fee With Anniversary Billing</fullName>
+                    <default>false</default>
+                    <label>Yearly Fee With Anniversary Billing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IsActive</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Is_Quotation_Tool_Product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Quotation Tool Product</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Learning_Channel_And_Market__c</fullName>
+        <description>LearningChannel-Market fields. Should match with the fields received in the Opportunity.</description>
+        <externalId>false</externalId>
+        <label>Learning Channel And Market</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>15-bus</fullName>
+                    <default>false</default>
+                    <label>15-bus</label>
+                </value>
+                <value>
+                    <fullName>14-bus</fullName>
+                    <default>false</default>
+                    <label>14-bus</label>
+                </value>
+                <value>
+                    <fullName>12-bus</fullName>
+                    <default>false</default>
+                    <label>12-bus</label>
+                </value>
+                <value>
+                    <fullName>0-bus</fullName>
+                    <default>false</default>
+                    <label>0-bus</label>
+                </value>
+                <value>
+                    <fullName>15-tec</fullName>
+                    <default>false</default>
+                    <label>15-tec</label>
+                </value>
+                <value>
+                    <fullName>14-tec</fullName>
+                    <default>false</default>
+                    <label>14-tec</label>
+                </value>
+                <value>
+                    <fullName>12-tec</fullName>
+                    <default>false</default>
+                    <label>12-tec</label>
+                </value>
+                <value>
+                    <fullName>0-tec</fullName>
+                    <default>false</default>
+                    <label>0-tec</label>
+                </value>
+                <value>
+                    <fullName>15-0</fullName>
+                    <default>false</default>
+                    <label>15-0</label>
+                </value>
+                <value>
+                    <fullName>14-0</fullName>
+                    <default>false</default>
+                    <label>14-0</label>
+                </value>
+                <value>
+                    <fullName>12-0</fullName>
+                    <default>false</default>
+                    <label>12-0</label>
+                </value>
+                <value>
+                    <fullName>0-0</fullName>
+                    <default>false</default>
+                    <label>0-0</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>More_Product_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>More Product Details</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NBI_Category__c</fullName>
+        <description>GDF 23/11 Added for Comp Plan.
+ALH 12/2014 : aligned with Dream</description>
+        <externalId>false</externalId>
+        <label>CHEOPS L1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NBI</fullName>
+                    <default>false</default>
+                    <label>NBI</label>
+                </value>
+                <value>
+                    <fullName>Connectivity</fullName>
+                    <default>false</default>
+                    <label>Connectivity</label>
+                </value>
+                <value>
+                    <fullName>Interface</fullName>
+                    <default>false</default>
+                    <label>Interface</label>
+                </value>
+                <value>
+                    <fullName>Shared Services</fullName>
+                    <default>false</default>
+                    <label>Shared Services</label>
+                </value>
+                <value>
+                    <fullName>Software and Connectivity</fullName>
+                    <default>false</default>
+                    <label>Software and Connectivity</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Services and Support</fullName>
+                    <default>false</default>
+                    <label>Services and Support</label>
+                </value>
+                <value>
+                    <fullName>Interfaces and Connectivity</fullName>
+                    <default>false</default>
+                    <label>Interfaces and Connectivity</label>
+                </value>
+                <value>
+                    <fullName>Messaging Services</fullName>
+                    <default>false</default>
+                    <label>Messaging Services</label>
+                </value>
+                <value>
+                    <fullName>Messaging and MIs</fullName>
+                    <default>false</default>
+                    <label>Messaging and MIs</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>No_or_low_amount_allowed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>No or low amount allowed</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OperationalServicePackage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If flagged, Support managers are notified on new service contract including that product, related contract influence case routing</inlineHelpText>
+        <label>Operational Service Package</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Process__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Process</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard process</fullName>
+                    <default>true</default>
+                    <label>Standard process</label>
+                </value>
+                <value>
+                    <fullName>Professional Service process</fullName>
+                    <default>false</default>
+                    <label>Professional Service process</label>
+                </value>
+                <value>
+                    <fullName>Suitability Assessment process</fullName>
+                    <default>false</default>
+                    <label>Suitability Assessment process</label>
+                </value>
+                <value>
+                    <fullName>Advanced Support and Care Services</fullName>
+                    <default>false</default>
+                    <label>Advanced Support and Care Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Owner_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>User_Product_Owner__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owner_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>User_Product_Owner__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner E-mail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Part_of_SWIFT_Sales_Rep_Targets__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CR #40119085</description>
+        <externalId>false</externalId>
+        <label>Part of SWIFT Sales Rep Targets</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Points_Ratio__c</fullName>
+        <description>The Points per 100k that are applicable for this product
+// 31/1/11: NOT USED AT THE MOMENT</description>
+        <externalId>false</externalId>
+        <label>Points Ratio</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>16</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>ProductCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Product_Group__c</fullName>
+        <description>CR#40131262</description>
+        <externalId>false</externalId>
+        <inlineHelpText>L4 Product Group</inlineHelpText>
+        <label>CHEOPS L4</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>3Skey</fullName>
+                    <default>false</default>
+                    <label>3Skey</label>
+                </value>
+                <value>
+                    <fullName>Accord</fullName>
+                    <default>false</default>
+                    <label>Accord</label>
+                </value>
+                <value>
+                    <fullName>Advanced Support</fullName>
+                    <default>false</default>
+                    <label>Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>Advisory Services-Other</fullName>
+                    <default>false</default>
+                    <label>Advisory Services</label>
+                </value>
+                <value>
+                    <fullName>Alliance Access &amp; Other options</fullName>
+                    <default>false</default>
+                    <label>Alliance Access &amp; Other options</label>
+                </value>
+                <value>
+                    <fullName>Alliance Cloud</fullName>
+                    <default>false</default>
+                    <label>Alliance Cloud</label>
+                </value>
+                <value>
+                    <fullName>Alliance Connect and Other Connections</fullName>
+                    <default>false</default>
+                    <label>Alliance Connect and Other Connections</label>
+                </value>
+                <value>
+                    <fullName>Alliance Connect - Everywhere</fullName>
+                    <default>false</default>
+                    <label>Alliance Connect - Everywhere</label>
+                </value>
+                <value>
+                    <fullName>Alliance Connect - Other</fullName>
+                    <default>false</default>
+                    <label>Alliance Connect - Other</label>
+                </value>
+                <value>
+                    <fullName>Alliance Entry</fullName>
+                    <default>false</default>
+                    <label>Alliance Entry</label>
+                </value>
+                <value>
+                    <fullName>Alliance Gateway</fullName>
+                    <default>false</default>
+                    <label>Alliance Gateway</label>
+                </value>
+                <value>
+                    <fullName>Alliance Gateway Instant</fullName>
+                    <default>false</default>
+                    <label>Alliance Gateway Instant</label>
+                </value>
+                <value>
+                    <fullName>Alliance Lifeline</fullName>
+                    <default>false</default>
+                    <label>Alliance Lifeline</label>
+                </value>
+                <value>
+                    <fullName>Alliance Lite</fullName>
+                    <default>false</default>
+                    <label>Alliance Lite</label>
+                </value>
+                <value>
+                    <fullName>Alliance Lite2</fullName>
+                    <default>false</default>
+                    <label>Alliance Lite2</label>
+                </value>
+                <value>
+                    <fullName>Alliance Managed Operations (AMO)</fullName>
+                    <default>false</default>
+                    <label>Alliance Managed Operations (AMO)</label>
+                </value>
+                <value>
+                    <fullName>Alliance Remote Gateway</fullName>
+                    <default>false</default>
+                    <label>Alliance Remote Gateway</label>
+                </value>
+                <value>
+                    <fullName>Alliance Warehouse</fullName>
+                    <default>false</default>
+                    <label>Alliance Warehouse</label>
+                </value>
+                <value>
+                    <fullName>AMH</fullName>
+                    <default>false</default>
+                    <label>AMH</label>
+                </value>
+                <value>
+                    <fullName>AMH Consulting</fullName>
+                    <default>false</default>
+                    <label>AMH Consulting</label>
+                </value>
+                <value>
+                    <fullName>AML</fullName>
+                    <default>false</default>
+                    <label>AML</label>
+                </value>
+                <value>
+                    <fullName>API</fullName>
+                    <default>false</default>
+                    <label>API</label>
+                </value>
+                <value>
+                    <fullName>AU NPP</fullName>
+                    <default>false</default>
+                    <label>AU NPP</label>
+                </value>
+                <value>
+                    <fullName>BI for Accord</fullName>
+                    <default>false</default>
+                    <label>BI for Accord</label>
+                </value>
+                <value>
+                    <fullName>BI for Securities</fullName>
+                    <default>false</default>
+                    <label>BI for Securities</label>
+                </value>
+                <value>
+                    <fullName>BI -  new Business Development</fullName>
+                    <default>false</default>
+                    <label>BI -  new Business Development</label>
+                </value>
+                <value>
+                    <fullName>Browse</fullName>
+                    <default>false</default>
+                    <label>Browse</label>
+                </value>
+                <value>
+                    <fullName>Business Intelligence</fullName>
+                    <default>false</default>
+                    <label>Business Intelligence</label>
+                </value>
+                <value>
+                    <fullName>Business Learning Services</fullName>
+                    <default>false</default>
+                    <label>Business Learning Services</label>
+                </value>
+                <value>
+                    <fullName>Channels and options</fullName>
+                    <default>false</default>
+                    <label>Channels and options</label>
+                </value>
+                <value>
+                    <fullName>CLS</fullName>
+                    <default>false</default>
+                    <label>CLS</label>
+                </value>
+                <value>
+                    <fullName>CLS MI Channel</fullName>
+                    <default>false</default>
+                    <label>CLS MI Channel</label>
+                </value>
+                <value>
+                    <fullName>Compliance</fullName>
+                    <default>false</default>
+                    <label>Compliance</label>
+                </value>
+                <value>
+                    <fullName>Compliance Analytics</fullName>
+                    <default>false</default>
+                    <label>Compliance Analytics</label>
+                </value>
+                <value>
+                    <fullName>Concurrent Sessions</fullName>
+                    <default>false</default>
+                    <label>Concurrent Sessions</label>
+                </value>
+                <value>
+                    <fullName>Concurrent Users</fullName>
+                    <default>false</default>
+                    <label>Concurrent Users</label>
+                </value>
+                <value>
+                    <fullName>Connectivity</fullName>
+                    <default>false</default>
+                    <label>Connectivity</label>
+                </value>
+                <value>
+                    <fullName>Connectivity Software</fullName>
+                    <default>false</default>
+                    <label>Connectivity Software</label>
+                </value>
+                <value>
+                    <fullName>Connector</fullName>
+                    <default>false</default>
+                    <label>Connector</label>
+                </value>
+                <value>
+                    <fullName>Consulting</fullName>
+                    <default>false</default>
+                    <label>Consulting</label>
+                </value>
+                <value>
+                    <fullName>Consulting - AMH</fullName>
+                    <default>false</default>
+                    <label>Consulting - AMH</label>
+                </value>
+                <value>
+                    <fullName>CREST</fullName>
+                    <default>false</default>
+                    <label>CREST</label>
+                </value>
+                <value>
+                    <fullName>Customer Registration</fullName>
+                    <default>false</default>
+                    <label>Customer Registration</label>
+                </value>
+                <value>
+                    <fullName>Daily Validation Reports</fullName>
+                    <default>false</default>
+                    <label>Daily Validation Reports</label>
+                </value>
+                <value>
+                    <fullName>Direct Link</fullName>
+                    <default>false</default>
+                    <label>Direct Link</label>
+                </value>
+                <value>
+                    <fullName>EasyWay</fullName>
+                    <default>false</default>
+                    <label>EasyWay</label>
+                </value>
+                <value>
+                    <fullName>EBA</fullName>
+                    <default>false</default>
+                    <label>EBA</label>
+                </value>
+                <value>
+                    <fullName>ESMIG</fullName>
+                    <default>false</default>
+                    <label>ESMIG</label>
+                </value>
+                <value>
+                    <fullName>Euroclear</fullName>
+                    <default>false</default>
+                    <label>Euroclear</label>
+                </value>
+                <value>
+                    <fullName>FileAct</fullName>
+                    <default>false</default>
+                    <label>FileAct</label>
+                </value>
+                <value>
+                    <fullName>Files</fullName>
+                    <default>false</default>
+                    <label>Files</label>
+                </value>
+                <value>
+                    <fullName>FIN</fullName>
+                    <default>false</default>
+                    <label>FIN</label>
+                </value>
+                <value>
+                    <fullName>FIN Copy</fullName>
+                    <default>false</default>
+                    <label>FIN Copy</label>
+                </value>
+                <value>
+                    <fullName>Fixed fee</fullName>
+                    <default>false</default>
+                    <label>Fixed fee</label>
+                </value>
+                <value>
+                    <fullName>FX_CLS</fullName>
+                    <default>false</default>
+                    <label>FX_CLS</label>
+                </value>
+                <value>
+                    <fullName>FX_Confirmation</fullName>
+                    <default>false</default>
+                    <label>FX_Confirmation</label>
+                </value>
+                <value>
+                    <fullName>FX_FPML</fullName>
+                    <default>false</default>
+                    <label>FX_FPML</label>
+                </value>
+                <value>
+                    <fullName>Go Local India</fullName>
+                    <default>false</default>
+                    <label>Go Local India</label>
+                </value>
+                <value>
+                    <fullName>gpi</fullName>
+                    <default>false</default>
+                    <label>gpi</label>
+                </value>
+                <value>
+                    <fullName>gpi Directory</fullName>
+                    <default>false</default>
+                    <label>gpi Directory</label>
+                </value>
+                <value>
+                    <fullName>gpi Observer</fullName>
+                    <default>false</default>
+                    <label>gpi Observer</label>
+                </value>
+                <value>
+                    <fullName>gpi Observer Analytics</fullName>
+                    <default>false</default>
+                    <label>gpi Observer Analytics</label>
+                </value>
+                <value>
+                    <fullName>HSM</fullName>
+                    <default>false</default>
+                    <label>HSM</label>
+                </value>
+                <value>
+                    <fullName>Integration - Sanctions Connector</fullName>
+                    <default>false</default>
+                    <label>Integration - Sanctions Connector</label>
+                </value>
+                <value>
+                    <fullName>Integration - SIL</fullName>
+                    <default>false</default>
+                    <label>Integration - SIL</label>
+                </value>
+                <value>
+                    <fullName>Integration software</fullName>
+                    <default>false</default>
+                    <label>Integration software</label>
+                </value>
+                <value>
+                    <fullName>InterAct</fullName>
+                    <default>false</default>
+                    <label>InterAct</label>
+                </value>
+                <value>
+                    <fullName>Interface Modules</fullName>
+                    <default>false</default>
+                    <label>Interface Modules</label>
+                </value>
+                <value>
+                    <fullName>Interfaces</fullName>
+                    <default>false</default>
+                    <label>Interfaces</label>
+                </value>
+                <value>
+                    <fullName>Interfaces (SAA/E)</fullName>
+                    <default>false</default>
+                    <label>Interfaces (SAA/E)</label>
+                </value>
+                <value>
+                    <fullName>JASDEC</fullName>
+                    <default>false</default>
+                    <label>JASDEC</label>
+                </value>
+                <value>
+                    <fullName>Know Your Customer Registry (KYC)</fullName>
+                    <default>false</default>
+                    <label>Know Your Customer Registry (KYC)</label>
+                </value>
+                <value>
+                    <fullName>KYC</fullName>
+                    <default>false</default>
+                    <label>KYC</label>
+                </value>
+                <value>
+                    <fullName>KYC Options</fullName>
+                    <default>false</default>
+                    <label>KYC Options</label>
+                </value>
+                <value>
+                    <fullName>KYC Registry</fullName>
+                    <default>false</default>
+                    <label>KYC Registry</label>
+                </value>
+                <value>
+                    <fullName>Learning Services</fullName>
+                    <default>false</default>
+                    <label>Learning Services</label>
+                </value>
+                <value>
+                    <fullName>List Management</fullName>
+                    <default>false</default>
+                    <label>List Management</label>
+                </value>
+                <value>
+                    <fullName>MA-CUG</fullName>
+                    <default>false</default>
+                    <label>MA-CUG</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Services</fullName>
+                    <default>false</default>
+                    <label>Maintenance Services</label>
+                </value>
+                <value>
+                    <fullName>Managed Services</fullName>
+                    <default>false</default>
+                    <label>Managed Services</label>
+                </value>
+                <value>
+                    <fullName>Membership</fullName>
+                    <default>false</default>
+                    <label>Membership</label>
+                </value>
+                <value>
+                    <fullName>Messaging</fullName>
+                    <default>false</default>
+                    <label>Messaging</label>
+                </value>
+                <value>
+                    <fullName>Messaging Applications</fullName>
+                    <default>false</default>
+                    <label>Messaging Applications</label>
+                </value>
+                <value>
+                    <fullName>MIRS</fullName>
+                    <default>false</default>
+                    <label>MIRS</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>MI Support</fullName>
+                    <default>false</default>
+                    <label>MI Support</label>
+                </value>
+                <value>
+                    <fullName>MyStandards</fullName>
+                    <default>false</default>
+                    <label>MyStandards</label>
+                </value>
+                <value>
+                    <fullName>Name Screening</fullName>
+                    <default>false</default>
+                    <label>Name Screening</label>
+                </value>
+                <value>
+                    <fullName>NBI - Other</fullName>
+                    <default>false</default>
+                    <label>NBI - Other</label>
+                </value>
+                <value>
+                    <fullName>Non-NBI - Other</fullName>
+                    <default>false</default>
+                    <label>Non-NBI - Other</label>
+                </value>
+                <value>
+                    <fullName>Non-NBI - Other TO CLEAN</fullName>
+                    <default>false</default>
+                    <label>Non-NBI - Other TO CLEAN</label>
+                </value>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+                <value>
+                    <fullName>Options - Alliance Operational Rep</fullName>
+                    <default>false</default>
+                    <label>Options - Alliance Operational Rep</label>
+                </value>
+                <value>
+                    <fullName>Options - Connector for T2S</fullName>
+                    <default>false</default>
+                    <label>Options - Connector for T2S</label>
+                </value>
+                <value>
+                    <fullName>Options - IPLA &amp; Integrator</fullName>
+                    <default>false</default>
+                    <label>Options - IPLA &amp; Integrator</label>
+                </value>
+                <value>
+                    <fullName>OS Swap</fullName>
+                    <default>false</default>
+                    <label>OS Swap</label>
+                </value>
+                <value>
+                    <fullName>Other Advisory Services</fullName>
+                    <default>false</default>
+                    <label>Other Advisory Services</label>
+                </value>
+                <value>
+                    <fullName>Other connections</fullName>
+                    <default>false</default>
+                    <label>Other connections</label>
+                </value>
+                <value>
+                    <fullName>Other MI customized service fee</fullName>
+                    <default>false</default>
+                    <label>Other MI customized service fee</label>
+                </value>
+                <value>
+                    <fullName>Other Security</fullName>
+                    <default>false</default>
+                    <label>Other Security</label>
+                </value>
+                <value>
+                    <fullName>P_Belgium CEC/UCV</fullName>
+                    <default>false</default>
+                    <label>P_Belgium CEC/UCV</label>
+                </value>
+                <value>
+                    <fullName>P_BOE_EnquiryLink</fullName>
+                    <default>false</default>
+                    <label>P_BOE_EnquiryLink</label>
+                </value>
+                <value>
+                    <fullName>P_C2B</fullName>
+                    <default>false</default>
+                    <label>P_C2B</label>
+                </value>
+                <value>
+                    <fullName>P_Copy</fullName>
+                    <default>false</default>
+                    <label>P_Copy</label>
+                </value>
+                <value>
+                    <fullName>P_Customer</fullName>
+                    <default>false</default>
+                    <label>P_Customer</label>
+                </value>
+                <value>
+                    <fullName>P_EBA_EURO1</fullName>
+                    <default>false</default>
+                    <label>P_EBA_EURO1</label>
+                </value>
+                <value>
+                    <fullName>P_EBA Step2</fullName>
+                    <default>false</default>
+                    <label>P_EBA Step2</label>
+                </value>
+                <value>
+                    <fullName>P_Eurogiro</fullName>
+                    <default>false</default>
+                    <label>P_Eurogiro</label>
+                </value>
+                <value>
+                    <fullName>P_Financial</fullName>
+                    <default>false</default>
+                    <label>P_Financial</label>
+                </value>
+                <value>
+                    <fullName>P_Generic FileAct</fullName>
+                    <default>false</default>
+                    <label>P_Generic FileAct</label>
+                </value>
+                <value>
+                    <fullName>P_Iberclear</fullName>
+                    <default>false</default>
+                    <label>P_Iberclear</label>
+                </value>
+                <value>
+                    <fullName>P_Interpay</fullName>
+                    <default>false</default>
+                    <label>P_Interpay</label>
+                </value>
+                <value>
+                    <fullName>P_Intraday</fullName>
+                    <default>false</default>
+                    <label>P_Intraday</label>
+                </value>
+                <value>
+                    <fullName>P_Isabel</fullName>
+                    <default>false</default>
+                    <label>P_Isabel</label>
+                </value>
+                <value>
+                    <fullName>P_Other</fullName>
+                    <default>false</default>
+                    <label>P_Other</label>
+                </value>
+                <value>
+                    <fullName>P_Other HVP</fullName>
+                    <default>false</default>
+                    <label>P_Other HVP</label>
+                </value>
+                <value>
+                    <fullName>P_Other Interbank</fullName>
+                    <default>false</default>
+                    <label>P_Other Interbank</label>
+                </value>
+                <value>
+                    <fullName>P_Other LVP</fullName>
+                    <default>false</default>
+                    <label>P_Other LVP</label>
+                </value>
+                <value>
+                    <fullName>P_RPS</fullName>
+                    <default>false</default>
+                    <label>P_RPS</label>
+                </value>
+                <value>
+                    <fullName>P_Seceti</fullName>
+                    <default>false</default>
+                    <label>P_Seceti</label>
+                </value>
+                <value>
+                    <fullName>P_Statement</fullName>
+                    <default>false</default>
+                    <label>P_Statement</label>
+                </value>
+                <value>
+                    <fullName>P_Target2</fullName>
+                    <default>false</default>
+                    <label>P_Target2</label>
+                </value>
+                <value>
+                    <fullName>P_Vocalink</fullName>
+                    <default>false</default>
+                    <label>P_Vocalink</label>
+                </value>
+                <value>
+                    <fullName>Paper</fullName>
+                    <default>false</default>
+                    <label>Paper</label>
+                </value>
+                <value>
+                    <fullName>Partner Marketing</fullName>
+                    <default>false</default>
+                    <label>Partner Marketing</label>
+                </value>
+                <value>
+                    <fullName>Payable Support</fullName>
+                    <default>false</default>
+                    <label>Payable Support</label>
+                </value>
+                <value>
+                    <fullName>Payment Controls</fullName>
+                    <default>false</default>
+                    <label>Payment Controls</label>
+                </value>
+                <value>
+                    <fullName>Payments data Quality</fullName>
+                    <default>false</default>
+                    <label>Payments data Quality</label>
+                </value>
+                <value>
+                    <fullName>Real-time payments interfaces</fullName>
+                    <default>false</default>
+                    <label>Real-time payments interfaces</label>
+                </value>
+                <value>
+                    <fullName>Regional Conferences</fullName>
+                    <default>false</default>
+                    <label>Regional Conferences</label>
+                </value>
+                <value>
+                    <fullName>RMA</fullName>
+                    <default>false</default>
+                    <label>RMA</label>
+                </value>
+                <value>
+                    <fullName>S_Asset_Servicing</fullName>
+                    <default>false</default>
+                    <label>S_Asset_Servicing</label>
+                </value>
+                <value>
+                    <fullName>S_Collateral</fullName>
+                    <default>false</default>
+                    <label>S_Collateral</label>
+                </value>
+                <value>
+                    <fullName>S_Collateral_Management</fullName>
+                    <default>false</default>
+                    <label>S_Collateral_Management</label>
+                </value>
+                <value>
+                    <fullName>S_Confirmation</fullName>
+                    <default>false</default>
+                    <label>S_Confirmation</label>
+                </value>
+                <value>
+                    <fullName>S_Corp_Action</fullName>
+                    <default>false</default>
+                    <label>S_Corp_Action</label>
+                </value>
+                <value>
+                    <fullName>S_CREST</fullName>
+                    <default>false</default>
+                    <label>S_CREST</label>
+                </value>
+                <value>
+                    <fullName>S_DTCC GCA</fullName>
+                    <default>false</default>
+                    <label>S_DTCC GCA</label>
+                </value>
+                <value>
+                    <fullName>S_Euroccp</fullName>
+                    <default>false</default>
+                    <label>S_Euroccp</label>
+                </value>
+                <value>
+                    <fullName>S_Euroclear</fullName>
+                    <default>false</default>
+                    <label>S_Euroclear</label>
+                </value>
+                <value>
+                    <fullName>S_Funds</fullName>
+                    <default>false</default>
+                    <label>S_Funds</label>
+                </value>
+                <value>
+                    <fullName>S_Instruction</fullName>
+                    <default>false</default>
+                    <label>S_Instruction</label>
+                </value>
+                <value>
+                    <fullName>S_Jasdec</fullName>
+                    <default>false</default>
+                    <label>S_Jasdec</label>
+                </value>
+                <value>
+                    <fullName>S_KDBW</fullName>
+                    <default>false</default>
+                    <label>S_KDBW</label>
+                </value>
+                <value>
+                    <fullName>S_NBB</fullName>
+                    <default>false</default>
+                    <label>S_NBB</label>
+                </value>
+                <value>
+                    <fullName>S_Other</fullName>
+                    <default>false</default>
+                    <label>S_Other</label>
+                </value>
+                <value>
+                    <fullName>S_Other securities</fullName>
+                    <default>false</default>
+                    <label>S_Other securities</label>
+                </value>
+                <value>
+                    <fullName>S_Statement</fullName>
+                    <default>false</default>
+                    <label>S_Statement</label>
+                </value>
+                <value>
+                    <fullName>S_status (advise)</fullName>
+                    <default>false</default>
+                    <label>S_status (advise)</label>
+                </value>
+                <value>
+                    <fullName>S_T2S</fullName>
+                    <default>false</default>
+                    <label>S_T2S</label>
+                </value>                
+                <value>
+                    <fullName>Sanctions Screening</fullName>
+                    <default>false</default>
+                    <label>Sanctions Screening</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Testing</fullName>
+                    <default>false</default>
+                    <label>Sanctions Testing</label>
+                </value>
+                <value>
+                    <fullName>Screening Utility</fullName>
+                    <default>false</default>
+                    <label>Screening Utility</label>
+                </value>
+                <value>
+                    <fullName>Security - Other</fullName>
+                    <default>false</default>
+                    <label>Security - Other</label>
+                </value>
+                <value>
+                    <fullName>SIBOS</fullName>
+                    <default>false</default>
+                    <label>SIBOS</label>
+                </value>
+                <value>
+                    <fullName>SIL</fullName>
+                    <default>false</default>
+                    <label>SIL</label>
+                </value>
+                <value>
+                    <fullName>SIL for Lite2</fullName>
+                    <default>false</default>
+                    <label>SIL for Lite2</label>
+                </value>
+                <value>
+                    <fullName>SNL</fullName>
+                    <default>false</default>
+                    <label>SNL</label>
+                </value>
+                <value>
+                    <fullName>SWIFT Cloud Services</fullName>
+                    <default>false</default>
+                    <label>SWIFT Cloud Services</label>
+                </value>
+                <value>
+                    <fullName>SWIFTNet Instant</fullName>
+                    <default>false</default>
+                    <label>SWIFTNet Instant</label>
+                </value>
+                <value>
+                    <fullName>SWIFTNet Link</fullName>
+                    <default>false</default>
+                    <label>SWIFTNet Link</label>
+                </value>
+                <value>
+                    <fullName>SWIFT Profile</fullName>
+                    <default>false</default>
+                    <label>SWIFT Profile</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef Others</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef Others</label>
+                </value>
+                <value>
+                    <fullName>SWIFTSmart</fullName>
+                    <default>false</default>
+                    <label>SWIFTSmart</label>
+                </value>
+                <value>
+                    <fullName>SWIFT Translator</fullName>
+                    <default>false</default>
+                    <label>SWIFT Translator</label>
+                </value>
+                <value>
+                    <fullName>SWIFT WebAccess</fullName>
+                    <default>false</default>
+                    <label>SWIFT WebAccess</label>
+                </value>
+                <value>
+                    <fullName>System (RMA)</fullName>
+                    <default>false</default>
+                    <label>System (RMA)</label>
+                </value>
+                <value>
+                    <fullName>T_Other</fullName>
+                    <default>false</default>
+                    <label>T_Other</label>
+                </value>
+                <value>
+                    <fullName>T_Trade</fullName>
+                    <default>false</default>
+                    <label>T_Trade</label>
+                </value>
+                <value>
+                    <fullName>T_Trade reporting</fullName>
+                    <default>false</default>
+                    <label>T_Trade reporting</label>
+                </value>
+                <value>
+                    <fullName>T2S</fullName>
+                    <default>false</default>
+                    <label>T2S</label>
+                </value>
+                <value>
+                    <fullName>Technical Learning Services</fullName>
+                    <default>false</default>
+                    <label>Technical Learning Services</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Transaction Pattern Detection</fullName>
+                    <default>false</default>
+                    <label>Transaction Pattern Detection</label>
+                </value>
+                <value>
+                    <fullName>Transaction Screening</fullName>
+                    <default>false</default>
+                    <label>Transaction Screening</label>
+                </value>
+                <value>
+                    <fullName>Translator</fullName>
+                    <default>false</default>
+                    <label>Translator</label>
+                </value>
+                <value>
+                    <fullName>Travel and Expenses</fullName>
+                    <default>false</default>
+                    <label>Travel and Expenses</label>
+                </value>
+                <value>
+                    <fullName>TSU</fullName>
+                    <default>false</default>
+                    <label>TSU</label>
+                </value>
+                <value>
+                    <fullName>User Hand Book (UHB)</fullName>
+                    <default>false</default>
+                    <label>User Hand Book (UHB)</label>
+                </value>
+                <value>
+                    <fullName>User Handbooks</fullName>
+                    <default>false</default>
+                    <label>User Handbooks</label>
+                </value>
+                <value>
+                    <fullName>VPN Box</fullName>
+                    <default>false</default>
+                    <label>VPN Box</label>
+                </value>
+                <value>
+                    <fullName>Watch Analytics &amp; Watch Insights</fullName>
+                    <default>false</default>
+                    <label>Watch Analytics &amp; Watch Insights</label>
+                </value>
+                <value>
+                    <fullName>Watch Analytics and Watch Insights</fullName>
+                    <default>false</default>
+                    <label>Watch Analytics and Watch Insights</label>
+                </value>
+                <value>
+                    <fullName>Work Detail</fullName>
+                    <default>false</default>
+                    <label>Work Detail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Owner_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Owner__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Owner Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Owner_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Owner__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Owner Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Owner__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Owner</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Products</relationshipLabel>
+        <relationshipName>Products</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>CHEOPS L3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accord</fullName>
+                    <default>false</default>
+                    <label>Accord</label>
+                </value>
+                <value>
+                    <fullName>Alliance Access</fullName>
+                    <default>false</default>
+                    <label>Alliance Access</label>
+                </value>
+                <value>
+                    <fullName>Alliance Connect</fullName>
+                    <default>false</default>
+                    <label>Alliance Connect</label>
+                </value>
+                <value>
+                    <fullName>Alliance Entry</fullName>
+                    <default>false</default>
+                    <label>Alliance Entry</label>
+                </value>
+                <value>
+                    <fullName>Alliance Gateway</fullName>
+                    <default>false</default>
+                    <label>Alliance Gateway</label>
+                </value>
+                <value>
+                    <fullName>Alliance Messaging Hub (AMH)</fullName>
+                    <default>false</default>
+                    <label>Alliance Messaging Hub (AMH)</label>
+                </value>
+                <value>
+                    <fullName>Alliance Warehouse</fullName>
+                    <default>false</default>
+                    <label>Alliance Warehouse</label>
+                </value>
+                <value>
+                    <fullName>BI for Accord</fullName>
+                    <default>false</default>
+                    <label>BI for Accord</label>
+                </value>
+                <value>
+                    <fullName>Browse</fullName>
+                    <default>false</default>
+                    <label>Browse</label>
+                </value>
+                <value>
+                    <fullName>Cloud Services</fullName>
+                    <default>false</default>
+                    <label>Cloud Services</label>
+                </value>
+                <value>
+                    <fullName>Compliance Analytics</fullName>
+                    <default>false</default>
+                    <label>Compliance Analytics</label>
+                </value>
+                <value>
+                    <fullName>Consulting</fullName>
+                    <default>false</default>
+                    <label>Consulting</label>
+                </value>
+                <value>
+                    <fullName>DMC_Payments</fullName>
+                    <default>false</default>
+                    <label>DMC_Payments</label>
+                </value>
+                <value>
+                    <fullName>Documentation</fullName>
+                    <default>false</default>
+                    <label>Documentation</label>
+                </value>
+                <value>
+                    <fullName>FA_P_Banking</fullName>
+                    <default>false</default>
+                    <label>FA_P_Banking</label>
+                </value>
+                <value>
+                    <fullName>FA_P_Corporates</fullName>
+                    <default>false</default>
+                    <label>FA_P_Corporates</label>
+                </value>
+                <value>
+                    <fullName>FA_P_HVP</fullName>
+                    <default>false</default>
+                    <label>FA_P_HVP</label>
+                </value>
+                <value>
+                    <fullName>FA_P_LVP</fullName>
+                    <default>false</default>
+                    <label>FA_P_LVP</label>
+                </value>
+                <value>
+                    <fullName>FA_Securities</fullName>
+                    <default>false</default>
+                    <label>FA_Securities</label>
+                </value>
+                <value>
+                    <fullName>FA_T_Trade</fullName>
+                    <default>false</default>
+                    <label>FA_T_Trade</label>
+                </value>
+                <value>
+                    <fullName>FIN_Payments</fullName>
+                    <default>false</default>
+                    <label>FIN_Payments</label>
+                </value>
+                <value>
+                    <fullName>FIN_Securities</fullName>
+                    <default>false</default>
+                    <label>FIN_Securities</label>
+                </value>
+                <value>
+                    <fullName>FIN_Trade</fullName>
+                    <default>false</default>
+                    <label>FIN_Trade</label>
+                </value>
+                <value>
+                    <fullName>FIN_Treasury</fullName>
+                    <default>false</default>
+                    <label>FIN_Treasury</label>
+                </value>
+                <value>
+                    <fullName>Fixed fee</fullName>
+                    <default>false</default>
+                    <label>Fixed fee</label>
+                </value>
+                <value>
+                    <fullName>IA_Payments</fullName>
+                    <default>false</default>
+                    <label>IA_Payments</label>
+                </value>
+                <value>
+                    <fullName>IA_Securities</fullName>
+                    <default>false</default>
+                    <label>IA_Securities</label>
+                </value>
+                <value>
+                    <fullName>IA_System</fullName>
+                    <default>false</default>
+                    <label>IA_System</label>
+                </value>
+                <value>
+                    <fullName>IA_Treasury</fullName>
+                    <default>false</default>
+                    <label>IA_Treasury</label>
+                </value>
+                <value>
+                    <fullName>Integration</fullName>
+                    <default>false</default>
+                    <label>Integration</label>
+                </value>
+                <value>
+                    <fullName>Managed Services</fullName>
+                    <default>false</default>
+                    <label>Managed Services</label>
+                </value>
+                <value>
+                    <fullName>Membership</fullName>
+                    <default>false</default>
+                    <label>Membership</label>
+                </value>
+                <value>
+                    <fullName>MI customized service fee</fullName>
+                    <default>false</default>
+                    <label>MI customized service fee</label>
+                </value>
+                <value>
+                    <fullName>MIRS (Market Infrastructure Resiliency Services)</fullName>
+                    <default>false</default>
+                    <label>MIRS (Market Infrastructure Resiliency Services)</label>
+                </value>
+                <value>
+                    <fullName>MyStandards</fullName>
+                    <default>false</default>
+                    <label>MyStandards</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Other connection</fullName>
+                    <default>false</default>
+                    <label>Other connection</label>
+                </value>
+                <value>
+                    <fullName>Partner Marketing</fullName>
+                    <default>false</default>
+                    <label>Partner Marketing</label>
+                </value>
+                <value>
+                    <fullName>Real-time</fullName>
+                    <default>false</default>
+                    <label>Real-time</label>
+                </value>
+                <value>
+                    <fullName>Real-time payments interfaces</fullName>
+                    <default>false</default>
+                    <label>Real-time payments interfaces</label>
+                </value>
+                <value>
+                    <fullName>RMA</fullName>
+                    <default>false</default>
+                    <label>RMA</label>
+                </value>
+                <value>
+                    <fullName>Sanctions</fullName>
+                    <default>false</default>
+                    <label>Sanctions</label>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                    <label>Security</label>
+                </value>
+                <value>
+                    <fullName>Support</fullName>
+                    <default>false</default>
+                    <label>Support</label>
+                </value>
+                <value>
+                    <fullName>SWIFTNet Link</fullName>
+                    <default>false</default>
+                    <label>SWIFTNet Link</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef</label>
+                </value>
+                <value>
+                    <fullName>SWIFT WebAccess</fullName>
+                    <default>false</default>
+                    <label>SWIFT WebAccess</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Transaction Pattern Detection</fullName>
+                    <default>false</default>
+                    <label>Transaction Pattern Detection</label>
+                </value>
+                <value>
+                    <fullName>Watch Analytics &amp; Watch insights</fullName>
+                    <default>false</default>
+                    <label>Watch Analytics &amp; Watch insights</label>
+                </value>
+                <value>
+                    <fullName>Adoption Services</fullName>
+                    <default>false</default>
+                    <label>Adoption Services</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Services</fullName>
+                    <default>false</default>
+                    <label>Maintenance Services</label>
+                </value>
+                <value>
+                    <fullName>Integration Services</fullName>
+                    <default>false</default>
+                    <label>Integration Services</label>
+                </value>
+                <value>
+                    <fullName>Initiatives and Project Support</fullName>
+                    <default>false</default>
+                    <label>Initiatives and Project Support</label>
+                </value>
+                <value>
+                    <fullName>Advisory Services</fullName>
+                    <default>false</default>
+                    <label>Advisory Services</label>
+                </value>
+                <value>
+                    <fullName>SWIFT Cloud Services</fullName>
+                    <default>false</default>
+                    <label>SWIFT Cloud Services</label>
+                </value>
+                <value>
+                    <fullName>KYC</fullName>
+                    <default>false</default>
+                    <label>KYC</label>
+                </value>
+                <value>
+                    <fullName>AML</fullName>
+                    <default>false</default>
+                    <label>AML</label>
+                </value>
+                <value>
+                    <fullName>Channels and options</fullName>
+                    <default>false</default>
+                    <label>Channels and options</label>
+                </value>
+                <value>
+                    <fullName>MI</fullName>
+                    <default>false</default>
+                    <label>MI</label>
+                </value>
+                <value>
+                    <fullName>Business Intelligence</fullName>
+                    <default>false</default>
+                    <label>Business Intelligence</label>
+                </value>
+                <value>
+                    <fullName>Screening Utility</fullName>
+                    <default>false</default>
+                    <label>Screening Utility</label>
+                </value>
+                <value>
+                    <fullName>Interfaces</fullName>
+                    <default>false</default>
+                    <label>Interfaces</label>
+                </value>
+                <value>
+                    <fullName>Interface Modules</fullName>
+                    <default>false</default>
+                    <label>Interface Modules</label>
+                </value>
+                <value>
+                    <fullName>Connectivity Software</fullName>
+                    <default>false</default>
+                    <label>Connectivity Software</label>
+                </value>
+                <value>
+                    <fullName>Concurrent Sessions</fullName>
+                    <default>false</default>
+                    <label>Concurrent Sessions</label>
+                </value>
+                <value>
+                    <fullName>Shared Services - Other</fullName>
+                    <default>false</default>
+                    <label>Shared Services - Other</label>
+                </value>
+                <value>
+                    <fullName>Alliance Connect and Other Connections</fullName>
+                    <default>false</default>
+                    <label>Alliance Connect and Other Connections</label>
+                </value>
+                <value>
+                    <fullName>Concurrent Users</fullName>
+                    <default>false</default>
+                    <label>Concurrent Users</label>
+                </value>
+                <value>
+                    <fullName>Work Detail</fullName>
+                    <default>false</default>
+                    <label>Work Detail</label>
+                </value>
+                <value>
+                    <fullName>Applications</fullName>
+                    <default>false</default>
+                    <label>Applications</label>
+                </value>
+                <value>
+                    <fullName>Learning Services</fullName>
+                    <default>false</default>
+                    <label>Learning Services</label>
+                </value>
+                <value>
+                    <fullName>Travel and Expenses</fullName>
+                    <default>false</default>
+                    <label>Travel and Expenses</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>QuantityUnitOfMeasure</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>SAPMaterialNumber__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>CRM-3988 - As a Salesforce internal user, I want to see what is the content of SWIFTSupport and SWIFTCare contract in term of module to guide contacts to a service he is entitled to</description>
+        <externalId>false</externalId>
+        <label>SAP Material Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Commission_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Commission Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Applicable_to_True_Sales_Commission__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>3SKEY</fullName>
+                    <default>false</default>
+                    <label>3SKEY</label>
+                </value>
+                <value>
+                    <fullName>AMH Interfaces</fullName>
+                    <default>false</default>
+                    <label>AMH Interfaces</label>
+                </value>
+                <value>
+                    <fullName>AMH Services</fullName>
+                    <default>false</default>
+                    <label>AMH Services</label>
+                </value>
+                <value>
+                    <fullName>BI</fullName>
+                    <default>false</default>
+                    <label>BI</label>
+                </value>
+                <value>
+                    <fullName>Lite2 ARG</fullName>
+                    <default>false</default>
+                    <label>Lite2 ARG</label>
+                </value>
+                <value>
+                    <fullName>Lite2 ASP</fullName>
+                    <default>false</default>
+                    <label>Lite2 ASP</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Interfaces</fullName>
+                    <default>false</default>
+                    <label>Lite2 Interfaces</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Lifeline</fullName>
+                    <default>false</default>
+                    <label>Lite2 Lifeline</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Lite converter</fullName>
+                    <default>false</default>
+                    <label>Lite2 Lite converter</label>
+                </value>
+                <value>
+                    <fullName>Compliance Analytics</fullName>
+                    <default>false</default>
+                    <label>Compliance Analytics</label>
+                </value>
+                <value>
+                    <fullName>Consultancy</fullName>
+                    <default>false</default>
+                    <label>Consultancy</label>
+                </value>
+                <value>
+                    <fullName>Consultancy ARG</fullName>
+                    <default>false</default>
+                    <label>Consultancy ARG</label>
+                </value>
+                <value>
+                    <fullName>Consultancy Lifeline</fullName>
+                    <default>false</default>
+                    <label>Consultancy Lifeline</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Consultancy</fullName>
+                    <default>false</default>
+                    <label>Lite2 Consultancy</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Peace of Mind consultancy</fullName>
+                    <default>false</default>
+                    <label>Lite2 Peace of Mind consultancy</label>
+                </value>
+                <value>
+                    <fullName>FIN Copy</fullName>
+                    <default>false</default>
+                    <label>FIN Copy</label>
+                </value>
+                <value>
+                    <fullName>Interfaces</fullName>
+                    <default>false</default>
+                    <label>Interfaces</label>
+                </value>
+                <value>
+                    <fullName>KYC profile</fullName>
+                    <default>false</default>
+                    <label>KYC profile</label>
+                </value>
+                <value>
+                    <fullName>KYC subscription</fullName>
+                    <default>false</default>
+                    <label>KYC subscription</label>
+                </value>
+                <value>
+                    <fullName>My Standards</fullName>
+                    <default>false</default>
+                    <label>My Standards</label>
+                </value>
+                <value>
+                    <fullName>My Standards readiness portal</fullName>
+                    <default>false</default>
+                    <label>My Standards readiness portal</label>
+                </value>
+                <value>
+                    <fullName>My Standards T2S readiness</fullName>
+                    <default>false</default>
+                    <label>My Standards T2S readiness</label>
+                </value>
+                <value>
+                    <fullName>SDK</fullName>
+                    <default>false</default>
+                    <label>SDK</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Screening</fullName>
+                    <default>false</default>
+                    <label>Sanctions Screening</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Testing</fullName>
+                    <default>false</default>
+                    <label>Sanctions Testing</label>
+                </value>
+                <value>
+                    <fullName>Support services</fullName>
+                    <default>false</default>
+                    <label>Support services</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef</label>
+                </value>
+                <value>
+                    <fullName>TSU</fullName>
+                    <default>false</default>
+                    <label>TSU</label>
+                </value>
+                <value>
+                    <fullName>Not applicable</fullName>
+                    <default>false</default>
+                    <label>Not applicable</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Sanctions Screening</controllingFieldValue>
+                <valueName>Sanctions Screening</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sanctions Testing</controllingFieldValue>
+                <valueName>Sanctions Testing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Support services</controllingFieldValue>
+                <valueName>Support services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SWIFTRef</controllingFieldValue>
+                <valueName>SWIFTRef</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TSU</controllingFieldValue>
+                <valueName>TSU</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Not applicable</controllingFieldValue>
+                <valueName>Not applicable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3SKEY</controllingFieldValue>
+                <valueName>3SKEY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMH</controllingFieldValue>
+                <valueName>AMH Interfaces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMH</controllingFieldValue>
+                <valueName>AMH Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BI</controllingFieldValue>
+                <valueName>BI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cloud family</controllingFieldValue>
+                <valueName>Lite2 ARG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cloud family</controllingFieldValue>
+                <valueName>Lite2 ASP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cloud family</controllingFieldValue>
+                <valueName>Lite2 Interfaces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cloud family</controllingFieldValue>
+                <valueName>Lite2 Lifeline</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cloud family</controllingFieldValue>
+                <valueName>Lite2 Lite converter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Compliance Analytics</controllingFieldValue>
+                <valueName>Compliance Analytics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consultancy</controllingFieldValue>
+                <valueName>Consultancy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consultancy</controllingFieldValue>
+                <valueName>Consultancy ARG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consultancy</controllingFieldValue>
+                <valueName>Consultancy Lifeline</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consultancy</controllingFieldValue>
+                <valueName>Lite2 Consultancy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consultancy</controllingFieldValue>
+                <valueName>Lite2 Peace of Mind consultancy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FIN Copy</controllingFieldValue>
+                <valueName>FIN Copy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Interfaces</controllingFieldValue>
+                <valueName>Interfaces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>KYC</controllingFieldValue>
+                <valueName>KYC profile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>KYC</controllingFieldValue>
+                <valueName>KYC subscription</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>My Standards</controllingFieldValue>
+                <valueName>My Standards</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>My Standards</controllingFieldValue>
+                <valueName>My Standards readiness portal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>My Standards</controllingFieldValue>
+                <valueName>My Standards T2S readiness</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>My Standards</controllingFieldValue>
+                <valueName>SDK</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sales_Target_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Target Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>3SKEY</fullName>
+                    <default>false</default>
+                    <label>3SKEY</label>
+                </value>
+                <value>
+                    <fullName>AMH consultancy</fullName>
+                    <default>false</default>
+                    <label>AMH consultancy</label>
+                </value>
+                <value>
+                    <fullName>AMH interfaces</fullName>
+                    <default>false</default>
+                    <label>AMH interfaces</label>
+                </value>
+                <value>
+                    <fullName>AMH support</fullName>
+                    <default>false</default>
+                    <label>AMH support</label>
+                </value>
+                <value>
+                    <fullName>AMH Training</fullName>
+                    <default>false</default>
+                    <label>AMH Training</label>
+                </value>
+                <value>
+                    <fullName>AU NPP</fullName>
+                    <default>false</default>
+                    <label>AU NPP</label>
+                </value>
+                <value>
+                    <fullName>BI</fullName>
+                    <default>false</default>
+                    <label>BI</label>
+                </value>
+                <value>
+                    <fullName>CLS STAR</fullName>
+                    <default>false</default>
+                    <label>CLS STAR</label>
+                </value>
+                <value>
+                    <fullName>Compliance Analytics</fullName>
+                    <default>false</default>
+                    <label>Compliance Analytics</label>
+                </value>
+                <value>
+                    <fullName>Consultancy</fullName>
+                    <default>false</default>
+                    <label>Consultancy</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_AMO</fullName>
+                    <default>false</default>
+                    <label>Consultancy_AMO</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_Analytics</fullName>
+                    <default>false</default>
+                    <label>Consultancy_Analytics</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_AUNPP</fullName>
+                    <default>false</default>
+                    <label>Consultancy_AUNPP</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_BI</fullName>
+                    <default>false</default>
+                    <label>Consultancy_BI</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_Cloud</fullName>
+                    <default>false</default>
+                    <label>Consultancy_Cloud</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_CREST</fullName>
+                    <default>false</default>
+                    <label>Consultancy_CREST</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_GPI</fullName>
+                    <default>false</default>
+                    <label>Consultancy_GPI</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_Interface</fullName>
+                    <default>false</default>
+                    <label>Consultancy_Interface</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_KYC</fullName>
+                    <default>false</default>
+                    <label>Consultancy_KYC</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_MIRS</fullName>
+                    <default>false</default>
+                    <label>Consultancy_MIRS</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_PDQ</fullName>
+                    <default>false</default>
+                    <label>Consultancy_PDQ</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_PM</fullName>
+                    <default>false</default>
+                    <label>Consultancy_PM</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_SanctionsScreening</fullName>
+                    <default>false</default>
+                    <label>Consultancy_SanctionsScreening</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_SanctionsTesting</fullName>
+                    <default>false</default>
+                    <label>Consultancy_SanctionsTesting</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_Standards</fullName>
+                    <default>false</default>
+                    <label>Consultancy_Standards</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_T2S</fullName>
+                    <default>false</default>
+                    <label>Consultancy_T2S</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_TE</fullName>
+                    <default>false</default>
+                    <label>Consultancy_TE</label>
+                </value>
+                <value>
+                    <fullName>Consultancy ARG</fullName>
+                    <default>false</default>
+                    <label>Consultancy ARG</label>
+                </value>
+                <value>
+                    <fullName>Consultancy Lifeline</fullName>
+                    <default>false</default>
+                    <label>Consultancy Lifeline</label>
+                </value>
+                <value>
+                    <fullName>Correspondent Monitoring</fullName>
+                    <default>false</default>
+                    <label>Correspondent Monitoring</label>
+                </value>
+                <value>
+                    <fullName>Daily Validation Reports</fullName>
+                    <default>false</default>
+                    <label>Daily Validation Reports</label>
+                </value>
+                <value>
+                    <fullName>FIN Copy</fullName>
+                    <default>false</default>
+                    <label>FIN Copy</label>
+                </value>
+                <value>
+                    <fullName>gpi</fullName>
+                    <default>false</default>
+                    <label>gpi</label>
+                </value>
+                <value>
+                    <fullName>Interfaces</fullName>
+                    <default>false</default>
+                    <label>Interfaces</label>
+                </value>
+                <value>
+                    <fullName>KYC Profile</fullName>
+                    <default>false</default>
+                    <label>KYC Profile</label>
+                </value>
+                <value>
+                    <fullName>KYC subscription</fullName>
+                    <default>false</default>
+                    <label>KYC subscription</label>
+                </value>
+                <value>
+                    <fullName>Lite2 ARG</fullName>
+                    <default>false</default>
+                    <label>Lite2 ARG</label>
+                </value>
+                <value>
+                    <fullName>Lite2 ASP</fullName>
+                    <default>false</default>
+                    <label>Lite2 ASP</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Consultancy</fullName>
+                    <default>false</default>
+                    <label>Lite2 Consultancy</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Interfaces</fullName>
+                    <default>false</default>
+                    <label>Lite2 Interfaces</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Lifeline</fullName>
+                    <default>false</default>
+                    <label>Lite2 Lifeline</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Lite converter</fullName>
+                    <default>false</default>
+                    <label>Lite2 Lite converter</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Peace of Mind Consultancy</fullName>
+                    <default>false</default>
+                    <label>Lite2 Peace of Mind Consultancy</label>
+                </value>
+                <value>
+                    <fullName>Lite2 Training</fullName>
+                    <default>false</default>
+                    <label>Lite2 Training</label>
+                </value>
+                <value>
+                    <fullName>MIRS</fullName>
+                    <default>false</default>
+                    <label>MIRS</label>
+                </value>
+                <value>
+                    <fullName>My Standards</fullName>
+                    <default>false</default>
+                    <label>My Standards</label>
+                </value>
+                <value>
+                    <fullName>My Standards readiness portal</fullName>
+                    <default>false</default>
+                    <label>My Standards readiness portal</label>
+                </value>
+                <value>
+                    <fullName>My Standards T2S readiness</fullName>
+                    <default>false</default>
+                    <label>My Standards T2S readiness</label>
+                </value>
+                <value>
+                    <fullName>Name screening</fullName>
+                    <default>false</default>
+                    <label>Name screening</label>
+                </value>
+                <value>
+                    <fullName>Payment Controls</fullName>
+                    <default>false</default>
+                    <label>Payment Controls</label>
+                </value>
+                <value>
+                    <fullName>Payments Data Quality</fullName>
+                    <default>false</default>
+                    <label>Payments Data Quality</label>
+                </value>                
+                <value>
+                    <fullName>Sanctions Screening</fullName>
+                    <default>false</default>
+                    <label>Sanctions Screening</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Testing</fullName>
+                    <default>false</default>
+                    <label>Sanctions Testing</label>
+                </value>
+                <value>
+                    <fullName>SDK</fullName>
+                    <default>false</default>
+                    <label>SDK</label>
+                </value>
+                <value>
+                    <fullName>Support services</fullName>
+                    <default>false</default>
+                    <label>Support services</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef</label>
+                </value>
+                <value>
+                    <fullName>T2S VAN</fullName>
+                    <default>false</default>
+                    <label>T2S VAN</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>TSU</fullName>
+                    <default>false</default>
+                    <label>TSU</label>
+                </value>
+                <value>
+                    <fullName>WebAccess (as a competing channel)</fullName>
+                    <default>false</default>
+                    <label>WebAccess (as a competing channel)</label>
+                </value>
+                <value>
+                    <fullName>Not applicable</fullName>
+                    <default>false</default>
+                    <label>NONE</label>
+                </value>
+                <value>
+                    <fullName>Correspondant Monitoring</fullName>
+                    <default>false</default>
+                    <label>Correspondant Monitoring</label>
+                </value>
+                <value>
+                    <fullName>AMH</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>AMH</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_AMH</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Consultancy_AMH</label>
+                </value>
+                <value>
+                    <fullName>Consultancy_training</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Consultancy_training</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Screening Traffic</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Sanctions Screening Traffic</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sales_alert_category_Level_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales alert category - Level 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Sales_alert_category_level_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales alert category - level 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Sales_target_group__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Target Group</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>3SKEY</fullName>
+                    <default>false</default>
+                    <label>3SKEY</label>
+                </value>
+                <value>
+                    <fullName>AMH interfaces</fullName>
+                    <default>false</default>
+                    <label>AMH</label>
+                </value>
+                <value>
+                    <fullName>AMH consultancy</fullName>
+                    <default>false</default>
+                    <label>AMH consultancy</label>
+                </value>
+                <value>
+                    <fullName>AU NPP</fullName>
+                    <default>false</default>
+                    <label>AU NPP</label>
+                </value>
+                <value>
+                    <fullName>BI</fullName>
+                    <default>false</default>
+                    <label>BI</label>
+                </value>
+                <value>
+                    <fullName>Cloud family</fullName>
+                    <default>false</default>
+                    <label>Cloud</label>
+                </value>
+                <value>
+                    <fullName>CLS STAR</fullName>
+                    <default>false</default>
+                    <label>CLS STAR</label>
+                </value>
+                <value>
+                    <fullName>Compliance Analytics</fullName>
+                    <default>false</default>
+                    <label>Compliance Analytics</label>
+                </value>
+                <value>
+                    <fullName>Consultancy</fullName>
+                    <default>false</default>
+                    <label>Consultancy</label>
+                </value>
+                <value>
+                    <fullName>Correspondent Monitoring</fullName>
+                    <default>false</default>
+                    <label>Correspondent Monitoring</label>
+                </value>
+                <value>
+                    <fullName>Daily Validation Reports</fullName>
+                    <default>false</default>
+                    <label>Daily Validation Reports</label>
+                </value>
+                <value>
+                    <fullName>FIN Copy</fullName>
+                    <default>false</default>
+                    <label>FIN Copy</label>
+                </value>
+                <value>
+                    <fullName>gpi</fullName>
+                    <default>false</default>
+                    <label>gpi</label>
+                </value>
+                <value>
+                    <fullName>Interfaces</fullName>
+                    <default>false</default>
+                    <label>Interfaces</label>
+                </value>
+                <value>
+                    <fullName>KYC</fullName>
+                    <default>false</default>
+                    <label>KYC</label>
+                </value>
+                <value>
+                    <fullName>MIRS</fullName>
+                    <default>false</default>
+                    <label>MIRS</label>
+                </value>
+                <value>
+                    <fullName>MyStandards</fullName>
+                    <default>false</default>
+                    <label>MyStandards</label>
+                </value>
+                <value>
+                    <fullName>Name screening</fullName>
+                    <default>false</default>
+                    <label>Name screening</label>
+                </value>
+                <value>
+                    <fullName>Not applicable</fullName>
+                    <default>false</default>
+                    <label>NONE</label>
+                </value>
+                <value>
+                    <fullName>Payment Controls</fullName>
+                    <default>false</default>
+                    <label>Payment Controls</label>
+                </value>
+                <value>
+                    <fullName>Payments Data Quality</fullName>
+                    <default>false</default>
+                    <label>Payments Data Quality</label>
+                </value>                
+                <value>
+                    <fullName>Sanctions Screening</fullName>
+                    <default>false</default>
+                    <label>Sanctions Screening</label>
+                </value>
+                <value>
+                    <fullName>Sanctions Testing</fullName>
+                    <default>false</default>
+                    <label>Sanctions Testing</label>
+                </value>
+                <value>
+                    <fullName>Support services</fullName>
+                    <default>false</default>
+                    <label>Support</label>
+                </value>
+                <value>
+                    <fullName>SWIFTRef</fullName>
+                    <default>false</default>
+                    <label>SWIFTRef</label>
+                </value>
+                <value>
+                    <fullName>T2S VAN</fullName>
+                    <default>false</default>
+                    <label>T2S VAN</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Transaction Screening</fullName>
+                    <default>false</default>
+                    <label>Transaction Screening</label>
+                </value>
+                <value>
+                    <fullName>TSU</fullName>
+                    <default>false</default>
+                    <label>TSU</label>
+                </value>
+                <value>
+                    <fullName>WebAccess (as a competing channel)</fullName>
+                    <default>false</default>
+                    <label>WebAccess (as a competing channel)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ServiceType__c</fullName>
+        <description>CRM-3826 - Commercial Product - New fields &apos;Service Type&apos; and &apos;TV codes&apos; for Professional Service products</description>
+        <externalId>false</externalId>
+        <label>Service Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Adoption Services</fullName>
+                    <default>false</default>
+                    <label>Adoption Services</label>
+                </value>
+                <value>
+                    <fullName>Advisory Services</fullName>
+                    <default>false</default>
+                    <label>Advisory Services</label>
+                </value>
+                <value>
+                    <fullName>Initiatives and Project Support</fullName>
+                    <default>false</default>
+                    <label>Initiatives and Project Support</label>
+                </value>
+                <value>
+                    <fullName>Integration Services</fullName>
+                    <default>false</default>
+                    <label>Integration Services</label>
+                </value>
+                <value>
+                    <fullName>Learning Services</fullName>
+                    <default>false</default>
+                    <label>Learning Services</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Services</fullName>
+                    <default>false</default>
+                    <label>Maintenance Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Standard_Price_in_default_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Standard Price in default Currency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>StockKeepingUnit</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
+    <fields>
+        <fullName>Suitability_Assessment_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is a Suitability Assessment required for this product?</inlineHelpText>
+        <label>Suitability Assessment Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TF_Record_Id_18_char__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TF Record Id 18 char</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TV_Code_Mandatory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created for CR #40162657</description>
+        <externalId>false</externalId>
+        <label>TV Code Mandatory</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TVcodes__c</fullName>
+        <description>CRM-3826 - Commercial Product - New fields &apos;Service Type&apos; and &apos;TV codes&apos; for Professional Service products</description>
+        <externalId>false</externalId>
+        <label>TV code</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>TV50000003 - NBI - Standards</fullName>
+                    <default>false</default>
+                    <label>TV50000003 - NBI Standards/ISO20022</label>
+                </value>
+                <value>
+                    <fullName>TV50000010 - Compliance Analytics</fullName>
+                    <default>false</default>
+                    <label>TV50000010 - Compliance Analytics</label>
+                </value>
+                <value>
+                    <fullName>TV50000011 - BI Analytics &amp; Insights</fullName>
+                    <default>false</default>
+                    <label>TV50000011 - BI Analytics &amp; Insights</label>
+                </value>
+                <value>
+                    <fullName>TV50000013 - KYC</fullName>
+                    <default>false</default>
+                    <label>TV50000013 - KYC</label>
+                </value>
+                <value>
+                    <fullName>TV50000015 - RMA</fullName>
+                    <default>false</default>
+                    <label>TV50000015 - RMA</label>
+                </value>
+                <value>
+                    <fullName>TV50000016 - Sanctions Screening</fullName>
+                    <default>false</default>
+                    <label>TV50000016 - Sanctions Screening</label>
+                </value>
+                <value>
+                    <fullName>TV50000017 - Sanctions Testing</fullName>
+                    <default>false</default>
+                    <label>TV50000017 - Sanctions Testing</label>
+                </value>
+                <value>
+                    <fullName>TV50000019 - Connectivity (incl. Alliance Connect)</fullName>
+                    <default>false</default>
+                    <label>TV50000019 - Connectivity (incl. Alliance Connect)</label>
+                </value>
+                <value>
+                    <fullName>TV50000023 - Security</fullName>
+                    <default>false</default>
+                    <label>TV50000023 - Security</label>
+                </value>
+                <value>
+                    <fullName>TV50000024 - Alliance Access</fullName>
+                    <default>false</default>
+                    <label>TV50000024 - Alliance Access</label>
+                </value>
+                <value>
+                    <fullName>TV50000026 - Connector for T2S</fullName>
+                    <default>false</default>
+                    <label>TV50000026 - Connector for T2S</label>
+                </value>
+                <value>
+                    <fullName>TV50000027 - IPLA &amp; Integrator</fullName>
+                    <default>false</default>
+                    <label>TV50000027 - IPLA &amp; Integrator</label>
+                </value>
+                <value>
+                    <fullName>TV50000028 - Sanctions Connector</fullName>
+                    <default>false</default>
+                    <label>TV50000028 - Sanctions Connector</label>
+                </value>
+                <value>
+                    <fullName>TV50000029 - Alliance Entry</fullName>
+                    <default>false</default>
+                    <label>TV50000029 - Alliance Entry</label>
+                </value>
+                <value>
+                    <fullName>TV50000030 - Alliance Gateway</fullName>
+                    <default>false</default>
+                    <label>TV50000030 - Alliance Gateway</label>
+                </value>
+                <value>
+                    <fullName>TV50000031 - Alliance Messaging Hub (AMH)</fullName>
+                    <default>false</default>
+                    <label>TV50000031 - Alliance Messaging Hub (AMH)</label>
+                </value>
+                <value>
+                    <fullName>TV50000032 - Alliance Lifeline</fullName>
+                    <default>false</default>
+                    <label>TV50000032 - Alliance Lifeline</label>
+                </value>
+                <value>
+                    <fullName>TV50000034 - Alliance Lite2</fullName>
+                    <default>false</default>
+                    <label>TV50000034 - Alliance Lite2</label>
+                </value>
+                <value>
+                    <fullName>TV50000037 - Alliance Remote Gateway</fullName>
+                    <default>false</default>
+                    <label>TV50000037 - Alliance Remote Gateway</label>
+                </value>
+                <value>
+                    <fullName>TV50000038 - SIL</fullName>
+                    <default>false</default>
+                    <label>TV50000038 - SIL</label>
+                </value>
+                <value>
+                    <fullName>TV50000044 - MI - AUNPP</fullName>
+                    <default>false</default>
+                    <label>TV50000044 - MI - AUNPP</label>
+                </value>
+                <value>
+                    <fullName>TV50000045 - MI - CLS</fullName>
+                    <default>false</default>
+                    <label>TV50000045 - MI - CLS</label>
+                </value>
+                <value>
+                    <fullName>TV50000046 - CREST</fullName>
+                    <default>false</default>
+                    <label>TV50000046 - CREST</label>
+                </value>
+                <value>
+                    <fullName>TV50000049 - MI - GLI</fullName>
+                    <default>false</default>
+                    <label>TV50000049 - MI - GLI</label>
+                </value>
+                <value>
+                    <fullName>TV50000053 - MI - Other (e.g. EBA)</fullName>
+                    <default>false</default>
+                    <label>TV50000053 - MI - Other (e.g. EBA)</label>
+                </value>
+                <value>
+                    <fullName>TV50000054 - MI - T2S</fullName>
+                    <default>false</default>
+                    <label>TV50000054 - MI - T2S</label>
+                </value>
+                <value>
+                    <fullName>TV50000055 - MIRS</fullName>
+                    <default>false</default>
+                    <label>TV50000055 - MIRS</label>
+                </value>
+                <value>
+                    <fullName>TV50000056 - MyStandards</fullName>
+                    <default>false</default>
+                    <label>TV50000056 - MyStandards</label>
+                </value>
+                <value>
+                    <fullName>TV50000063 - AMO</fullName>
+                    <default>false</default>
+                    <label>TV50000063 - AMO</label>
+                </value>
+                <value>
+                    <fullName>TV50000064 - SWIFTRef</fullName>
+                    <default>false</default>
+                    <label>TV50000064 - SWIFTRef</label>
+                </value>
+                <value>
+                    <fullName>TV50000072 - Alliance Messaging Warehouse</fullName>
+                    <default>false</default>
+                    <label>TV50000072 - Alliance Messaging Warehouse</label>
+                </value>
+                <value>
+                    <fullName>TV50000075 - Payments Data Quality</fullName>
+                    <default>false</default>
+                    <label>TV50000075 - Payments Data Quality</label>
+                </value>
+                <value>
+                    <fullName>TV50000102 - SWIFTScope</fullName>
+                    <default>false</default>
+                    <label>TV50000102 - SWIFTScope</label>
+                </value>
+                <value>
+                    <fullName>TV50000122 - Daily Validation Report</fullName>
+                    <default>false</default>
+                    <label>TV50000122 - Daily Validation Report</label>
+                </value>
+                <value>
+                    <fullName>TV50000131 - BI for gpi</fullName>
+                    <default>false</default>
+                    <label>TV50000131 - BI for gpi</label>
+                </value>
+                <value>
+                    <fullName>TV50000133 - Custom Code Maintenance</fullName>
+                    <default>false</default>
+                    <label>TV50000133 - Custom Code Maintenance</label>
+                </value>
+                <value>
+                    <fullName>TV50000144 - Correspondent Monitoring</fullName>
+                    <default>false</default>
+                    <label>TV50000144 - Correspondent Monitoring</label>
+                </value>
+                <value>
+                    <fullName>TV50000151 - Transaction Detection Pattern-Payment Controls</fullName>
+                    <default>false</default>
+                    <label>TV50000151 - Transaction Detection Pattern-Payment Controls</label>
+                </value>
+                <value>
+                    <fullName>TV50000161 - Name Screening</fullName>
+                    <default>false</default>
+                    <label>TV50000161 - Name Screening</label>
+                </value>
+                <value>
+                    <fullName>TV50000162 - SWIFT Translator</fullName>
+                    <default>false</default>
+                    <label>TV50000162 - SWIFT Translator</label>
+                </value>
+                <value>
+                    <fullName>TV50000171 - Connector for GPI</fullName>
+                    <default>false</default>
+                    <label>TV50000171 - Connector for GPI</label>
+                </value>
+                <value>
+                    <fullName>TV50000182 - Direct Link</fullName>
+                    <default>false</default>
+                    <label>TV50000182 - Direct Link</label>
+                </value>
+                <value>
+                    <fullName>TV50000191 - gpi Observer Analytics</fullName>
+                    <default>false</default>
+                    <label>TV50000191 - gpi Observer Analytics</label>
+                </value>
+                <value>
+                    <fullName>TV50000192 - Alliance Gateway Instant</fullName>
+                    <default>false</default>
+                    <label>TV50000192 - Alliance Gateway Instant</label>
+                </value>
+                <value>
+                    <fullName>TV50000211 - AMH Instant</fullName>
+                    <default>false</default>
+                    <label>TV50000211 - AMH Instant</label>
+                </value>
+                <value>
+                    <fullName>TV50000212 - non product specific advisory activities</fullName>
+                    <default>false</default>
+                    <label>TV50000212 - non product specific advisory activities</label>
+                </value>
+                <value>
+                    <fullName>TV50000221 - SWIFTSmart</fullName>
+                    <default>false</default>
+                    <label>TV50000221 - SWIFTSmart</label>
+                </value>
+                <value>
+                    <fullName>TV50000112 - gpi Core</fullName>
+                    <default>false</default>
+                    <label>TV50000112 - gpi Core</label>
+                </value>
+                <value>
+                    <fullName>TV50000241 - Alliance Cloud</fullName>
+                    <default>false</default>
+                    <label>TV50000241 - Alliance Cloud</label>
+                </value>
+                <value>
+                    <fullName>TV50000251 - ESMIG VAS</fullName>
+                    <default>false</default>
+                    <label>TV50000251 - ESMIG VAS</label>
+                </value>
+                <value>
+                    <fullName>TV50000074 - Sanctions List distribution</fullName>
+                    <default>false</default>
+                    <label>TV50000074 - Sanctions List distribution</label>
+                </value>
+                <value>
+                    <fullName>TV50000281 - MicroGateway</fullName>
+                    <default>false</default>
+                    <label>TV50000281 - MicroGateway</label>
+                </value>
+                <value>
+                    <fullName>TV59999999 - Unassigned</fullName>
+                    <default>false</default>
+                    <label>TV59999999 - Unassigned</label>
+                </value>
+                <value>
+                    <fullName>TV50000231 - Transaction Screening Service</fullName>
+                    <default>false</default>
+                    <label>TV50000231 - Transaction Screening Service</label>
+                </value>
+                <value>
+                    <fullName>TV50000032 - Alliane Lifeline</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>TV50000032 - Alliane Lifeline</label>
+                </value>
+                <value>
+                    <fullName>TV50000074 -	Sanctions List distribution</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>TV50000074 -	Sanctions List distribution</label>
+                </value>
+                <value>
+                    <fullName>TV50000112 -	gpi Core</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>TV50000112 -	gpi Core</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tech_Product_Identifier__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Tech Product Identifier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>True_Sales_Product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CR#40129181</description>
+        <externalId>false</externalId>
+        <label>True Sales Product</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit of Measure</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unweighted_Points__c</fullName>
+        <description>GDF 24/11 Comp Plan</description>
+        <externalId>false</externalId>
+        <label>Unweighted Points</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Product_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User Product Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Products</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Video_based_Product_Info__c</fullName>
+        <description>QT-5992 This field should only be visible (and editable) in the product2 for an admin profile.</description>
+        <externalId>false</externalId>
+        <label>Video based Product Info</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>    
     <listViews>
-        <fullName>AllProducts</fullName>
+        <fullName>All_active_commercial_products</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>SAPMaterialNumber__c</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>NBI_Category__c</columns>
+        <columns>PRODUCT2.FAMILY</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Product_Group__c</columns>
+        <columns>Product_Owner__c</columns>
+        <columns>Product_Owner_Email__c</columns>
+        <columns>Product_Owner_Phone__c</columns>
+        <columns>Default_Currency__c</columns>
+        <columns>Sales_Commission_Category__c</columns>
+        <columns>Applicable_to_True_Sales_Commission__c</columns>
+        <columns>Sales_Target_Category__c</columns>
+        <columns>Sales_target_group__c</columns>
         <filterScope>Everything</filterScope>
-        <label>All Products</label>
-    </listViews>
-    <searchLayouts>
-        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
-        <customTabListAdditionalFields>PRODUCT2.DESCRIPTION</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+        <label>All active commercial products</label>
+    </listViews>         
 </CustomObject>

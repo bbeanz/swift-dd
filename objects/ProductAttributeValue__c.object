@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">    
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Represents the attribute values for a product class</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>    	
+    <fields>
+        <fullName>APTS_Service_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+                <value>
+                    <fullName>Online and Batch</fullName>
+                    <default>false</default>
+                    <label>Online and Batch</label>
+                </value>
+                <value>
+                    <fullName>Batch</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Batch</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+	<fields>
+        <fullName>APTS_Screening_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Screening Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sanctions Only</fullName>
+                    <default>false</default>
+                    <label>Sanctions Only</label>
+                </value>
+                <value>
+                    <fullName>Sanctions &amp; Ownership Research &amp; PEP</fullName>
+                    <default>false</default>
+                    <label>Sanctions &amp; Ownership Research &amp; PEP</label>
+                </value>
+                <value>
+                    <fullName>Sanctions &amp; ownership research &amp; PEP &amp; Adverse Media</fullName>
+                    <default>false</default>
+                    <label>Sanctions &amp; ownership research &amp; PEP &amp; Adverse Media</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+	<fields>
+        <fullName>APTS_Batch_Screening_Band__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Name Screening Batch Band1 pricing exception: Pre-approved discount scheme for institutions who load less than 5,000 unique records in the Batch service.</inlineHelpText>
+        <label>Batch Screening Band</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Band 1 : 0-5000</fullName>
+                    <default>false</default>
+                    <label>Band 1 : 0-5000</label>
+                </value>
+                <value>
+                    <fullName>Band 1 : 5001-10000</fullName>
+                    <default>false</default>
+                    <label>Band 1 : 5001-10000</label>
+                </value>
+                <value>
+                    <fullName>Band 2 : 10001-50000</fullName>
+                    <default>false</default>
+                    <label>Band 2 : 10001-50000</label>
+                </value>
+                <value>
+                    <fullName>Band 3 : 50001-100000</fullName>
+                    <default>false</default>
+                    <label>Band 3 : 50001-100000</label>
+                </value>
+                <value>
+                    <fullName>Band 4 : 100001-250000</fullName>
+                    <default>false</default>
+                    <label>Band 4 : 100001-250000</label>
+                </value>
+                <value>
+                    <fullName>Band 5 : 250001-500000</fullName>
+                    <default>false</default>
+                    <label>Band 5 : 250001-500000</label>
+                </value>
+                <value>
+                    <fullName>Band 6 : 500001-1000000</fullName>
+                    <default>false</default>
+                    <label>Band 6 : 500001-1000000</label>
+                </value>
+                <value>
+                    <fullName>Band 7 : 1000001-1500000</fullName>
+                    <default>false</default>
+                    <label>Band 7 : 1000001-1500000</label>
+                </value>
+                <value>
+                    <fullName>Band 8 : 1500001-2250000</fullName>
+                    <default>false</default>
+                    <label>Band 8 : 1500001-2250000</label>
+                </value>
+                <value>
+                    <fullName>Band 9 : 2250001-3500000</fullName>
+                    <default>false</default>
+                    <label>Band 9 : 2250001-3500000</label>
+                </value>
+                <value>
+                    <fullName>Band 10 : 3500001-6000000</fullName>
+                    <default>false</default>
+                    <label>Band 10 : 3500001-6000000</label>
+                </value>
+                <value>
+                    <fullName>Band 11 : 6000001-10000000</fullName>
+                    <default>false</default>
+                    <label>Band 11 : 6000001-10000000</label>
+                </value>
+                <value>
+                    <fullName>Band 12 : 10000001-15000000</fullName>
+                    <default>false</default>
+                    <label>Band 12 : 10000001-15000000</label>
+                </value>
+                <value>
+                    <fullName>Band 13 : 15000001-20000000</fullName>
+                    <default>false</default>
+                    <label>Band 13 : 15000001-20000000</label>
+                </value>
+                <value>
+                    <fullName>Band 14 : 20000001-25000000</fullName>
+                    <default>false</default>
+                    <label>Band 14 : 20000001-25000000</label>
+                </value>
+                <value>
+                    <fullName>Band 15 : 25000001-35000000</fullName>
+                    <default>false</default>
+                    <label>Band 15 : 25000001-35000000</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>	
+	<fields>
+        <fullName>APTS_EP_Threshold__c</fullName>
+        <externalId>false</externalId>
+        <label>EP Threshold (%)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                    <label>0</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>7.1</fullName>
+                    <default>false</default>
+                    <label>7.1</label>
+                </value>
+                <value>
+                    <fullName>7.7</fullName>
+                    <default>false</default>
+                    <label>7.7</label>
+                </value>
+                <value>
+                    <fullName>8.3</fullName>
+                    <default>false</default>
+                    <label>8.3</label>
+                </value>
+                <value>
+                    <fullName>9.1</fullName>
+                    <default>false</default>
+                    <label>9.1</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>10</label>
+                </value>
+                <value>
+                    <fullName>11.1</fullName>
+                    <default>false</default>
+                    <label>11.1</label>
+                </value>
+                <value>
+                    <fullName>12.5</fullName>
+                    <default>false</default>
+                    <label>12.5</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>15</label>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                    <label>20</label>
+                </value>
+                <value>
+                    <fullName>25</fullName>
+                    <default>false</default>
+                    <label>25</label>
+                </value>
+                <value>
+                    <fullName>28.6</fullName>
+                    <default>false</default>
+                    <label>28.6</label>
+                </value>
+                <value>
+                    <fullName>29.4</fullName>
+                    <default>false</default>
+                    <label>29.4</label>
+                </value>
+                <value>
+                    <fullName>30</fullName>
+                    <default>false</default>
+                    <label>30</label>
+                </value>
+                <value>
+                    <fullName>33.3</fullName>
+                    <default>false</default>
+                    <label>33.3</label>
+                </value>
+                <value>
+                    <fullName>35</fullName>
+                    <default>false</default>
+                    <label>35</label>
+                </value>
+                <value>
+                    <fullName>40</fullName>
+                    <default>false</default>
+                    <label>40</label>
+                </value>
+                <value>
+                    <fullName>41.7</fullName>
+                    <default>false</default>
+                    <label>41.7</label>
+                </value>
+                <value>
+                    <fullName>45</fullName>
+                    <default>false</default>
+                    <label>45</label>
+                </value>
+                <value>
+                    <fullName>46.2</fullName>
+                    <default>false</default>
+                    <label>46.2</label>
+                </value>
+                <value>
+                    <fullName>46.7</fullName>
+                    <default>false</default>
+                    <label>46.7</label>
+                </value>
+                <value>
+                    <fullName>46.9</fullName>
+                    <default>false</default>
+                    <label>46.9</label>
+                </value>
+                <value>
+                    <fullName>48</fullName>
+                    <default>false</default>
+                    <label>48</label>
+                </value>
+                <value>
+                    <fullName>50</fullName>
+                    <default>false</default>
+                    <label>50</label>
+                </value>
+                <value>
+                    <fullName>55</fullName>
+                    <default>false</default>
+                    <label>55</label>
+                </value>
+                <value>
+                    <fullName>60</fullName>
+                    <default>false</default>
+                    <label>60</label>
+                </value>
+                <value>
+                    <fullName>65</fullName>
+                    <default>false</default>
+                    <label>65</label>
+                </value>
+                <value>
+                    <fullName>70</fullName>
+                    <default>false</default>
+                    <label>70</label>
+                </value>
+                <value>
+                    <fullName>75</fullName>
+                    <default>false</default>
+                    <label>75</label>
+                </value>
+                <value>
+                    <fullName>78</fullName>
+                    <default>false</default>
+                    <label>78</label>
+                </value>
+                <value>
+                    <fullName>80</fullName>
+                    <default>false</default>
+                    <label>80</label>
+                </value>
+                <value>
+                    <fullName>85</fullName>
+                    <default>false</default>
+                    <label>85</label>
+                </value>
+                <value>
+                    <fullName>87</fullName>
+                    <default>false</default>
+                    <label>87</label>
+                </value>
+                <value>
+                    <fullName>90</fullName>
+                    <default>false</default>
+                    <label>90</label>
+                </value>
+                <value>
+                    <fullName>95</fullName>
+                    <default>false</default>
+                    <label>95</label>
+                </value>
+                <value>
+                    <fullName>100</fullName>
+                    <default>false</default>
+                    <label>100</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+	<fields>
+        <fullName>APTS_Sanctions_Screening_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>A 50% discount for the first year for Subscription and additional Users is granted to customers that are already licensed with (or order) Sanctions Screening or KYC Registry</inlineHelpText>
+        <label>Sanctions Screening Customer</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+	<fields>
+        <fullName>APTS_KYC_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>A 50% discount for the first year for Subscription and additional Users is granted to customers that are already licensed with (or order) Sanctions Screening or KYC Registry.</inlineHelpText>
+        <label>KYC Customer</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+	<fields>
+        <fullName>APTS_Proposal_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Price Impact</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>15</visibleLines>
+    </fields>
+    <label>RFP Product Attribute Value</label>
+    <nameField>
+        <displayFormat>AV-{0000000000}</displayFormat>
+        <label>Attribute Value Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Product Attribute Values</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>    
+    <visibility>Public</visibility>
+</CustomObject>
